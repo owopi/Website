@@ -1,0 +1,121 @@
+ 
+
+:root {
+    --font-size: 2em;
+    --h1: 72px;
+    --gray: #808080;
+}
+html {
+    /* Self explanatory ^ */
+    scroll-behavior: smooth;
+    /* may make smooth scrolling bar */
+}
+body
+{
+    background-color: #EDEEC0;
+
+}
+@font-face
+{
+    font-family: "CustomFont";
+    src: url("Brexterdemo-1G4Pe.otf")format("opentype");
+}
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+h1 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: var(--h1);
+    color: #0075A2;
+    text-align: center;
+}
+
+h2
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:normal;
+    font-size: calc(var(--h1) - 24px);
+    color: #E85F5C;
+    text-align: center;
+}
+
+h3
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:normal;
+    font-size: calc(var(--h1) - 40px);
+    color:#628B48;
+    text-align: center;
+}
+
+p
+{
+    font-family:monospace;
+}
+
+#Contents
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+ul > li{
+    list-style-type: none;
+}
+
+.font {
+    color: black;
+    font-weight: bold;
+    font-size: var(--font-size);
+    /* Centers the text */
+    display: flex;
+    justify-content: center;
+}
+
+.textCenter {
+    /* also centers the text */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text__center {
+        /* obvious enough */
+        /* max-width: ""; works but i might want to extra value  */
+    width: max(880px);
+    /* width: min(90%, 70.5rem); */
+    padding-left: 10px;
+}
+
+.middle__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1800px;
+    position: fixed;
+    font-size: max(1rem);
+    font-size: min(5vw, 5vh);
+    height: 40px;
+    width: clamp(1800px, 900px, );
+}
+
+.Main_Header {
+    position: absolute;
+    top: min(-100%);
+}
+.whitespace {
+    position: relative;
+    height: max(40px);
+}
+
+.Main_Title {
+    width: clamp(80%, 1980px, 480px);
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang = "en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Fundamentals of 3D Printing</title>
+        <link href="layout.css" rel="stylesheet" type="text/css">
+    </head>
+	<body>
+        <h1>Fundamentals of 3D Printing</h1>
+        <h2>What is 3D Printing?</h2>
+        <p>
+            3D printing, or additive manufacturing, is the construction of a three-dimensional object from a CAD model or a digital 3D model. The term &ldquo;3D printing&rdquo; can refer to a variety of processes in which material is deposited, joined or solidified under computer control to create a three-dimensional object, with material being added together (such as plastics, liquids or powder grains being fused together), typically layer by layer.
+        </p>
+        <h2 id="Fundamentals_of_3D_Printing"> Fundamentals of 3D Printing </h2>
+        <h3 id="Modelling"> Modelling </h3>
+        <p>
+            3D printable models may be created with a computer-aided design (CAD) package, via a 3D scanner, or by a plain digital camera and photogrammetry software. 3D printed models created with CAD result in relatively fewer errors than other methods. Errors in 3D printable models can be identified and corrected before printing. The manual modeling process of preparing geometric data for 3D computer graphics is similar to plastic arts such as sculpting. 3D scanning is a process of collecting digital data on the shape and appearance of a real object, creating a digital model based on it.
+        </p>
+        <p>
+            CAD models can be saved in the stereolithography file format (STL), a de facto CAD file format for additive manufacturing that stores data based on triangulations of the surface of CAD models. STL is not tailored for additive manufacturing because it generates large file sizes of topology optimized parts and lattice structures due to the large number of surfaces involved. A newer CAD file format, the Additive Manufacturing File format (AMF) was introduced in 2011 to solve this problem. It stores information using curved triangulations.
+        </p>
+        <h3 id="Materials"> Materials </h3>
+        <p>
+            Traditionally, 3D printing focused on polymers for printing, due to the ease of manufacturing and handling polymeric materials. However, the method has rapidly evolved to not only print various polymers but also metals and ceramics, making 3D printing a versatile option for manufacturing. Layer-by-layer fabrication of three-dimensional physical models is a modern concept that &ldquo;stems from the ever-growing CAD industry, more specifically the solid modeling side of CAD. Before solid modeling was introduced in the late 1980s, three-dimensional models were created with wire frames and surfaces.&rdquo; but in all cases the layers of materials are controlled by the printer and the material properties. The three-dimensional material layer is controlled by deposition rate as set by the printer operator and stored in a computer file.
+        </p>
+        <h3 id="Printing"> Printing </h3>
+        <p>
+            Before printing a 3D model from an STL file, it must first be examined for errors. Most CAD applications produce errors in output STL files, of the following types:
+        </p>
+        <ul>
+            <li>holes</li>
+            <li>faces normals</li>
+            <li>self-intersections</li>
+            <li>noise shells</li>
+            <li>manifold errors</li>
+            <li>overhang issues</li>
+        </ul>
+        <p>
+            A step in the STL generation known as &ldquo;repair&rdquo; fixes such problems in the original model. Generally STLs that have been produced from a model obtained through 3D scanning often have more of these errors as 3D scanning is often achieved by point to point acquisition/mapping. 3D reconstruction often includes errors.
+        </p>
+        <p>
+            Once completed, the STL file needs to be processed by a piece of software called a &ldquo;slicer,&rdquo; which converts the model into a series of thin layers and produces a G-code file containing instructions tailored to a specific type of 3D printer (FDM printers).This G-code file can then be printed with 3D printing client software (which loads the G-code, and uses it to instruct the 3D printer during the 3D printing process).
+        </p>
+            
+        <p>
+            Printer resolution describes layer thickness and X-Y resolution in dots per inch (dpi) or micrometers (&micro;m). Typical layer thickness is around 100 &micro;m (250 DPI), although some machines can print layers as thin as 16 &micro;m (1,600 DPI). X-Y resolution is comparable to that of laser printers. The particles (3D dots) are around 50 to 100 &micro;m (510 to 250 DPI) in diameter. For that printer resolution, specifying a mesh resolution of 0.01-0.03 mm and a chord length &le; 0.016 mm generates an optimal STL output file for a given model input file. Specifying higher resolution results in larger files without increase in print quality.
+        </p>
+        
+        <p>
+            Construction of a model with contemporary methods can take anywhere from several hours to several days, depending on the method used and the size and complexity of the model. Additive systems can typically reduce this time to a few hours, although it varies widely depending on the type of machine used and the size and number of models being produced simultaneously.
+        </p>
+        <h3> Finishing </h3>
+        <p>
+            Though the printer-produced resolution is sufficient for many applications, greater accuracy can be achieved by printing a slightly oversized version of the desired object in standard resolution and then removing material using a higher-resolution subtractive process.
+        </p>
+
+        <p>
+            The layered structure of all additive manufacturing processes leads inevitably to a stair-stepping effect on part surfaces which are curved or tilted in respect to the building platform. The effects strongly depend on the orientation of a part surface inside the building process. Some printable polymers such as ABS, allow the surface finish to be smoothed and improved using chemical vapor processes based on acetone or similar solvents.
+        </p>
+            
+        <p>
+            Some additive manufacturing techniques are capable of using multiple materials in the course of constructing parts. These techniques are able to print in multiple colors and color combinations simultaneously, and would not necessarily require painting. Some printing techniques require internal supports to be built for overhanging features during construction. These supports must be mechanically removed or dissolved upon completion of the print.
+        </p>
+            
+        <p>
+            All of the commercialized metal 3D printers involve cutting the metal component off the metal substrate after deposition. A new process for the GMAW 3D printing allows for substrate surface modifications to remove aluminum or steel.
+        </p>
+        

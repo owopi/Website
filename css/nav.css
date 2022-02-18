@@ -1,0 +1,74 @@
+.nav {
+    background-color: var(--gray);
+    height: 50px;
+    width: 336px;
+}
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: black;
+    font-weight: bold;
+}
+a:visited {
+    color: black;
+    font-weight: bold;
+}
+a:hover {
+    color: black;
+    font-weight: bold;
+}
+a:active {
+    color: black;
+    font-weight: bold;
+}
+
+
+.link {
+    font-weight: bold;
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #B83952;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.4em;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding: .75rem;
+    /* Bends the borders */
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    /* Makes the content disappear */
+    opacity: 0;
+    /*gives it a falling effect*/
+    transform: translateY(-10px);
+    /* transition so there is animation when it appears */
+    /* ease in and out is the property to change the animation */
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+    /* this prevents you from clicking the content if it overlaps */
+    pointer-events: none;
+}
+
+.dropdown.active > .link,.link:hover{
+    /* changes colors */
+    color: #CE5F75;
+}
+.dropdown.active > .link + .menu{
+    /* makes it visible */
+    opacity: 1;
+    /* moves to original position */
+    transform: translateY(0px);
+    /* allows interaction with content */
+    pointer-events: auto;
+}

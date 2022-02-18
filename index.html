@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang = "en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Linux Distributions </title>
+        <link href="css/layout.css" rel="stylesheet" type="text/css">
+        <link href="css/nav.css" rel="stylesheet" type="text/css"> 
+        <script src="javascript/main.mjs" defer type="module"></script>
+        <script src="javascript/dropdown.js" defer type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="whitespace">
+
+            <div id="Main_Header">
+                <br><br><br>
+                <!-- Intentional line breaks to provide spacing w/o css so as to avoid conflicts with position relative elements at navbar -->
+                <!-- could be avoided with zindex so relative or not itll overlap but prefer extra space -->
+                <header class="font">Linux Operating Systems</header>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <div class="dropdown" data-dropdown>
+                    <button class="link" data-dropdown-button>Distro</button>
+                    <div class="menu distros row">
+                        <div class="col-3 col-s-3">
+                            <div class="dropdown-heading">Debian</div>
+                            <div>
+                                <a>ubuntu</a>
+                                <a>Mx Linux</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span title="Main"></span>
+        <div class="row">
+            <div class="col-3 col-s-3">
+                <h1 id="Main_Title">Linux Distributions?</h1>
+            </div>
+        </div>
+        <div class="textCenter row">
+        <!-- why separated? so the content dont group as one container and overlap -->
+            <div class="col-3 col-s-3">
+            <h2>What is Linux?</h2>
+            <p class="text__center">Linux is a family of open-source Unix-like operating systems based on the Linux kernel,
+               an operating system kernel first released on September 17, 1991, by Linus Torvalds.
+               Linux is typically packaged in a Linux distribution oftenly referred as distros. <br>
+               <span class="text__middle">What kind of distros are there?</span>
+               <a href="https://blog.packagecloud.io/10-most-popular-linux-distributions-and-why-they-exist/"><u><sup title="Here is a list of popular Linux distributions">list</sup></u></a>
+            </p>
+            </div>
+        </div>
+        <div class="textCenter row">
+            <div class="col-3 col-s-3">
+            <h2>Uses for Linux </h2>
+            <p class="text__center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est corrupti natus illo, nisi esse earum ipsa blanditiis quae quaerat distinctio reprehenderit eius? Possimus illo repellendus dicta officia. Exercitationem, quam.</p>
+            <!-- I think it should be of? -->
+            <!-- what is off -->
+            </div>
+        </div>
+        <div class="textCenter row">
+            <div class="col-3 col-s-3"> 
+                <h2>What Distro is Right for You?</h2>
+                <p class="text__center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, soluta minus iste earum labore sunt eius itaque tempora exercitationem fugit quidem architecto sapiente temporibus, doloribus sit, assumenda quos non voluptas.</p>
+            </div>
+        </div>
+    </body>
+</html>
