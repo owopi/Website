@@ -7,66 +7,100 @@
         <title> Linux Distributions </title>
         <link href="css/layout.css" rel="stylesheet" type="text/css">
         <link href="css/nav.css" rel="stylesheet" type="text/css"> 
+        <!-- <link rel="stylesheet" href="css/rws.css"> -->
+        <!-- was being buggy -->
         <script src="javascript/main.mjs" defer type="module"></script>
         <script src="javascript/dropdown.js" defer type="text/javascript"></script>
     </head>
     <body>
-        <div class="whitespace">
-
-            <div id="Main_Header">
-                <br><br><br>
-                <!-- Intentional line breaks to provide spacing w/o css so as to avoid conflicts with position relative elements at navbar -->
-                <!-- could be avoided with zindex so relative or not itll overlap but prefer extra space -->
-                <header class="font">Linux Operating Systems</header>
+        <section class="whitespace row">
+            <div class="bow__container">
+                <!-- <br><br><br><br><br><br> -->
+                <div class="max__width col-3 col-s-3">
+                </div>
             </div>
-        </div>
+        </section>
+        <section>
+            <div class="row">
+                    <div class="box__container">
+                        <!-- Intentional line breaks to provide spacing w/o css so as to avoid conflicts with position relative elements at navbar -->
+                        <!-- could be avoided with zindex so relative or not itll overlap but prefer extra space -->
+                        <div class="Main_Header max__width col-3 col-s-3">
+                            <header class="font">Linux Operating Systems</header>
+                        </div>
+                    </div>
+            </div>
+        </section>
 
         <div class="container">
             <div class="header">
                 <div class="dropdown" data-dropdown>
                     <button class="link" data-dropdown-button>Distro</button>
-                    <div class="menu distros row">
-                        <div class="col-3 col-s-3">
-                            <div class="dropdown-heading">Debian</div>
-                            <div>
-                                <a>ubuntu</a>
+                    <div class="menu distros">
+                        <div>
+                            <div class="dropdown-heading">
+                                <p class="drop__title"><u><strong>Debian</strong></u></p>
+                            </div>
+                            <div class="dropdown__links">
+                                <a href="distros/ubuntu.html">Ubuntu</a>
                                 <a>Mx Linux</a>
+                                <a>Arch Linux</a>
+                                <a>Cent OS</a>
+                                <a>Fedora</a>
+                                <a>Zorin OS</a>
+                                <a>Linux Mint</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <span title="Main"></span>
-        <div class="row">
-            <div class="col-3 col-s-3">
-                <h1 id="Main_Title">Linux Distributions?</h1>
+        <span class="Main"></span>
+        <section>
+            <div class="row">
+                <div class="box__container">
+                    <div class="col-3 col-s-3">
+                        <h1 id="Main_Title">Linux Distributions?</h1>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="textCenter row">
-        <!-- why separated? so the content dont group as one container and overlap -->
-            <div class="col-3 col-s-3">
-            <h2>What is Linux?</h2>
-            <p class="text__center">Linux is a family of open-source Unix-like operating systems based on the Linux kernel,
-               an operating system kernel first released on September 17, 1991, by Linus Torvalds.
-               Linux is typically packaged in a Linux distribution oftenly referred as distros. <br>
-               <span class="text__middle">What kind of distros are there?</span>
-               <a href="https://blog.packagecloud.io/10-most-popular-linux-distributions-and-why-they-exist/"><u><sup title="Here is a list of popular Linux distributions">list</sup></u></a>
-            </p>
+        </section>
+        <section>
+            <div class="textCenter row">
+            <!-- why separated? so the content dont group as one container and overlap -->
+            <h2 class="text-center">What is Linux?</h2>
+            <div class="box__container">
+                <div class="col-3 col-s-3 max__width">
+                    <p>Linux is a family of open-source Unix-like operating systems based on the Linux kernel,
+                       an operating system kernel first released on September 17, 1991, by Linus Torvalds.
+                       Linux is typically packaged in a Linux distribution oftenly referred as distros. <br>
+                       <span class="text__middle">What kind of distros are there?</span>
+                       <a href="https://blog.packagecloud.io/10-most-popular-linux-distributions-and-why-they-exist/"><u><sup title="Here is a list of popular Linux distributions">list</sup></u></a>
+                    </p>
+                    </div>
             </div>
-        </div>
+            </div>
+        </section>
         <div class="textCenter row">
-            <div class="col-3 col-s-3">
-            <h2>Uses for Linux </h2>
-            <p class="text__center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est corrupti natus illo, nisi esse earum ipsa blanditiis quae quaerat distinctio reprehenderit eius? Possimus illo repellendus dicta officia. Exercitationem, quam.</p>
+                <div class="">
+                    <div class="col-3 col-s-3">
+                        <h2>Uses for Linux </h2>
+                    </div>
+                    <div class="box__container">
+                        <div class="col-3 col-s-3 max__width">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est corrupti natus illo, nisi esse earum ipsa blanditiis quae quaerat distinctio reprehenderit eius? Possimus illo repellendus dicta officia. Exercitationem, quam.</p>
+                        </div>
+                    </div>
+                </div>
             <!-- I think it should be of? -->
             <!-- what is off -->
-            </div>
         </div>
         <div class="textCenter row">
-            <div class="col-3 col-s-3"> 
-                <h2>What Distro is Right for You?</h2>
-                <p class="text__center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, soluta minus iste earum labore sunt eius itaque tempora exercitationem fugit quidem architecto sapiente temporibus, doloribus sit, assumenda quos non voluptas.</p>
+            <h2 class="text-center">What Distro is Right for You?</h2>
+            <div class="box__container">
+                <div class="col-3 col-s-3 max__width">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, soluta minus iste earum labore sunt eius itaque tempora exercitationem fugit quidem architecto sapiente temporibus, doloribus sit, assumenda quos non voluptas.</p>
+                </div>
             </div>
         </div>
     </body>

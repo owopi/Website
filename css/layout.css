@@ -2,9 +2,11 @@
 
 :root {
     --font-size: 2em;
-    --h1: 72px;
+    --h1: 2.5em;
     --gray: #808080;
 }
+
+
 html {
     /* Self explanatory ^ */
     scroll-behavior: smooth;
@@ -25,6 +27,13 @@ header {
     display: flex;
     justify-content: center;
 }
+/* Putting it above h1 so it doesnt affect h1 */
+.Main_Title {
+    width: clamp(80%, 1980px, 480px);
+    line-height: 1.4rem;
+    position: relative;
+}
+
 h1 
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,6 +41,7 @@ h1
     font-size: var(--h1);
     color: #0075A2;
     text-align: center;
+    
 }
 
 h2
@@ -78,20 +88,39 @@ ul > li{
 
 .textCenter {
     /* also centers the text */
-    display: grid;
+    display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-inline: auto;
 }
 
-.text__center {
+.max__width {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 40em) {
+    .max__width {
+        flex-direction: row;
+    }
+    /* Gives ideal width so */
+    .max__width > * {
+        flex-basis: 100%;
+    }
+}
+/* .p {
+    width: max(880px);
         /* obvious enough */
         /* max-width: ""; works but i might want to extra value  */
-    width: max(880px);
-    /* width: min(90%, 70.5rem); */
+    /* width: min(90%, 70.5rem)
     padding-left: 10px;
 }
-
+*/
+.box__container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
 .middle__text {
     display: flex;
     align-items: center;
@@ -105,17 +134,17 @@ ul > li{
     font-size: min(5vw, 5vh);
     height: 40px;
     width: clamp(1800px, 900px, );
+    top: 5%;
+    padding-left: 1em;
+    vertical-align: middle;
 }
 
 .Main_Header {
-    position: absolute;
-    top: min(-100%);
+    position: relative;
 }
 .whitespace {
     position: relative;
-    height: max(40px);
+    height: max(110px);
+    background-color: #6d6875;
 }
 
-.Main_Title {
-    width: clamp(80%, 1980px, 480px);
-}
