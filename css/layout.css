@@ -127,17 +127,7 @@ ul > li{
     justify-content: center;
 }
 
-.container {
-    width: 1800px;
-    position: fixed;
-    font-size: max(1rem);
-    font-size: min(5vw, 5vh);
-    height: 40px;
-    width: clamp(1800px, 900px, );
-    top: 5%;
-    padding-left: 1em;
-    vertical-align: middle;
-}
+
 
 .Main_Header {
     position: relative;
@@ -145,6 +135,20 @@ ul > li{
 .whitespace {
     position: relative;
     height: max(110px);
-    background-color: #6d6875;
 }
 
+table {
+    font-family: monospace;
+    border-collapse: separate;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #2d2a32;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #D9DB76;
+}

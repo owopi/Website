@@ -1,17 +1,56 @@
-<!doctype html>
-<html lang = "en">
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title> FAQ </title>
-        <link href="/css/layout.css" rel="stylesheet" type="text/css">
-    </head>
-	<body>
-    <!-- i dont think we should use /css/layout here -->
-    <!--  also can u check on github page that our css works fine
-    sometimes its buggy with folders i havent solved the issue yet   -->
-    <!-- icic, ill do it later then ig-->
-    <!-- we dont need it rn, i finish my css -->
-    <!-- ok then -->
-    <!-- you there? i need the link for liveshare -->
-    <!-- found it -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ of linux</title>
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css">
+    <link href="css/faq.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="navbarbg">
+        <div class="container">
+            <div class="header">
+                <div class="dropdown" data-dropdown>
+                    <button class="link" data-dropdown-button>List of Distributions</button>
+                    <div class="menu distros">
+                        <div>
+                            <div class="dropdown-heading">
+                                <p class="drop__title"><u><strong>Debian</strong></u></p>
+                            </div>
+                            <div class="dropdown__links">
+                                <a href="distros/ubuntu.html">Ubuntu</a>
+                                <a href="distros/oracle.html">Oracle Linux</a>
+                                <a href="distros/arch.html">Arch Linux</a>
+                                <a href="distros/cent.html">Cent OS</a>
+                                <a href="distros/fedora.html">Fedora</a>
+                                <a href="distros/zorin.html">Zorin OS</a>
+                                <a href="distros/mint.html">Linux Mint</a>
+                                <a href="distros/" style="display: none;">Oracle Linux</a>
+                            </div>
+                        </div>
+                    </div>
+                        <a href="faq.html" class="faq">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="whitespace row"></div>
+
+    <div class="search-container">
+        <div class="">
+            <label class="search-pos" for="search" title="Type something and itll find the link">Search Faq</label>
+            <input type="search" id="search">
+        </div>
+    </div>
+    <div class="faq__links">
+        <div class="card">        
+            <a class="main__links">E</a>
+            <a class="description__links">a</a>
+        </div>
+    </div>
+</body>
+</html>
