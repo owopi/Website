@@ -1,14 +1,19 @@
 .faq {
     float: right;
     box-sizing: border-box;
-    padding: .5rem;
-    border: 1px solid #000;
+    padding: .2rem;
+    border: 1px solid #000000;
     box-shadow: 10px 10px 54px -6px rgba(0,0,0,0.75);
     transform-style: preserve-3d;
     position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #B83952;
 }
 .faq:hover {
-    border: 1px solid #000;
+    border: 1px solid #000000;
+    color: #CE5F75;
+
 }
 
 .faq__links {

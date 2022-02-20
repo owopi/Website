@@ -6,6 +6,7 @@ document.addEventListener('click', e => {
 
     let currentDrop;
     if (isDropDownButton) {
+        console.log("Clicked")
         currentDrop = e.target.closest('[data-dropdown]');
         //hides/open dropdown depending itsactive state
         currentDrop.classList.toggle('active');
