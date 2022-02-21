@@ -38,6 +38,7 @@ a:active {
     color: #B83952;
     cursor: pointer;
     padding: 0;
+    z-index: 2  ;
     font-size: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -116,7 +117,7 @@ a:active {
     margin: 10px;
     top: -0.5%;
     position: fixed;
-
+    z-index: 1;
 }
 .arrow {
     border: solid #B83952;

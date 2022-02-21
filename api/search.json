@@ -1,0 +1,25 @@
+[
+    {
+        "id": "A2EZB",
+        "Header": "1) What is Linux?",
+        "Description Content": "Linux is an operating system based on UNIX and was first introduced by Linus Torvalds. It is based on the Linux Kernel and can run on different hardware platforms manufactured by Intel, MIPS, HP, IBM, SPARC, and Motorola. Another popular element in Linux is its mascot, a penguin figure named Tux.",
+        "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
+        "Date of source": "29 December 2021",
+        "Question?": "1",
+        "Keyword": "?Linux",
+        "Usage": "Informative"
+    },
+    {
+        "id": "13GHJ",
+        "Header": "3) What is BASH?",
+        "Description Content": "BASH is short for Bourne Again SHell. It was written by Steve Bourne as a replacement to the original Bourne Shell (represented by /bin/sh). It combines all the features from the original version of Bourne Shell, plus additional functions to make it easier and more convenient to use. It has since been adapted as the default shell for most systems running Linux.",
+        "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
+        "Date of source": "29 December 2021",
+        "Question?": "3",
+        "Keyword": "?BASH",
+        "Usage": "Terminal writing, executing commands, script writing"
+    },
+    {
+
+    }
+]

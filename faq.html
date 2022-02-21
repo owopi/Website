@@ -9,13 +9,14 @@
     <link href="css/faq.css?version=3" rel="stylesheet" type="text/css">
     <script src="javascript/dropdown.js?version=2" defer type="text/javascript"></script>
     <script src="javascript/main.mjs?version=1" defer type="module"></script>
+    <script src="javascript/api.mjs?123123" defer type="text/javascript"></script>
 </head>
 <body>
     <div class="navbarbg">
         <div class="container">
             <div class="header">
-                <div class="dropdown" data-dropdown>
-                    <button class="link" data-dropdown-button>List of Distributions</button>
+                <div class="dropdown" data-dropdown1>
+                    <button class="link" data-dropdown-button1>List of Distributions</button>
                     <div class="menu distros">
                         <div>
                             <div class="dropdown-heading">
@@ -39,20 +40,23 @@
         </div>
     </div>
     
-    <div class="whitespace row"></div>
-
+    
     <div class="search-container">
+        <div class="whitespace row behind"></div>
         <div class="">
             <label class="search-pos" for="search" title="Type something and itll find the link">Search Faq</label>
             <input type="search" id="search">
         </div>
     </div>
-    <div class="faq__links">
+
+    <div class="faq__links"></div>
+    
+    <template data-user-template>
         <div class="card">        
-            <a class="main__links">E</a>
-            <a class="description__links">a</a>
-            <a class="description__links">a</a>
+            <a class="main__links"></a>
+            <a class="description__links"></a>
+            <a class="description__links"></a>
         </div>
-    </div>
+    </template>
 </body>
 </html>

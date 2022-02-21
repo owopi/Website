@@ -1,3 +1,2 @@
 import foo from "./secondary.mjs";
-
-console.log(foo('owo'));
+var bar = foo('owo')

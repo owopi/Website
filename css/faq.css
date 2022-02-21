@@ -19,13 +19,36 @@
 .faq__links {
     display: flex;
     flex-direction: column;
+    padding: 1rem 0 0 1rem;
     gap: .25rem;
+    margin-top: 1rem;
 }
 
+.search-container {
+    padding: 1em 0 0 1rem;
+}
 input {
     font-size: 1rem;
 }
 
-.cards {
-    display: grod;
+.card {
+    border: 1px solid black;
+    background-color: white;
+    padding: .5rem;
+}
+.card > .main__links{
+    margin-bottom: .25rem;
+    font-size: 2em;
+}
+.card > .description__links{
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.hide {
+    display: none;
+}
+
+.behind {
+    z-index: 0;
 }
