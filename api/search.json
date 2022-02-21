@@ -2,24 +2,91 @@
     {
         "id": "A2EZB",
         "Header": "1) What is Linux?",
-        "Description Content": "Linux is an operating system based on UNIX and was first introduced by Linus Torvalds. It is based on the Linux Kernel and can run on different hardware platforms manufactured by Intel, MIPS, HP, IBM, SPARC, and Motorola. Another popular element in Linux is its mascot, a penguin figure named Tux.",
+        "Description_Content": "Linux is an operating system based on UNIX and was first introduced by Linus Torvalds. It is based on the Linux Kernel and can run on different hardware platforms manufactured by Intel, MIPS, HP, IBM, SPARC, and Motorola. Another popular element in Linux is its mascot, a penguin figure named Tux.",
         "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
         "Date of source": "29 December 2021",
         "Question?": "1",
-        "Keyword": "?Linux",
+        "Keyword": "?LINUX",
         "Usage": "Informative"
     },
     {
         "id": "13GHJ",
         "Header": "3) What is BASH?",
-        "Description Content": "BASH is short for Bourne Again SHell. It was written by Steve Bourne as a replacement to the original Bourne Shell (represented by /bin/sh). It combines all the features from the original version of Bourne Shell, plus additional functions to make it easier and more convenient to use. It has since been adapted as the default shell for most systems running Linux.",
+        "Description_Content": "BASH is short for Bourne Again SHell. It was written by Steve Bourne as a replacement to the original Bourne Shell (represented by /bin/sh). It combines all the features from the original version of Bourne Shell, plus additional functions to make it easier and more convenient to use. It has since been adapted as the default shell for most systems running Linux.",
         "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
         "Date of source": "29 December 2021",
-        "Question?": "3",
+        "Question?": "2",
         "Keyword": "?BASH",
         "Usage": "Terminal writing, executing commands, script writing"
     },
     {
-
+        "id": "B7NQZ",
+        "Header": "5) What is LILO?",
+        "Description_Content": "LILO is a boot loader for Linux. It is used mainly to load the Linux operating system into main memory so that it can begin its operations.",
+        "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
+        "Date of source": "29 December 2021",
+        "Question?": "3" ,
+        "Keyword": "?LILO",
+        "Usage": "Used by system"
+    },
+    {
+        "id": "14MNQ",
+        "Header": "6) What is swap space?",
+        "Description_Content": "Swap space is a certain amount of space used by Linux to temporarily hold some programs that are running concurrently. This happens when RAM does not have enough memory to hold all programs that are executing.",
+        "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
+        "Date of source": "29 December 2021",
+        "Question?": "4",
+        "Keyword": "?SWAP",
+        "Usage": "Used by system"
+    },
+    {
+        "id": "C9LZW",
+        "Header": "7) What is the advantage of open source?",
+        "Description_Content": "Open source allows you to distribute your software, including source codes freely to anyone who is interested. People would then be able to add features and even debug and correct errors that are in the source code. They can even make it run better and then redistribute these enhanced source code freely again. This eventually benefits everyone in the community.",
+        "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
+        "Date of source": "29 December 2021",
+        "Question?": "5",
+        "Keyword": "?OESU",
+        "Usage": "Used to share"
+    },
+    {
+        "id": "15LVX",
+        "Header": "8) What are the basic components of Linux?",
+        "Description_Content": "Just like any other typical operating system, Linux has all of these components: kernel, shells and GUIs, system utilities, and an application program. What makes Linux advantageous over other operating system is that every aspect comes with additional features and all codes for these are downloadable for free.",
+        "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
+        "Date of source": "29 December 2021",
+        "Question?": "6",
+        "Keyword": "?REQUIREMENTS",
+        "Usage": "Used to share"
+    },
+    {
+        "id": "D2TUR",
+        "Header": "9) Does it help for a Linux system to have multiple desktop environments installed?",
+        "Description_Content": "In general, one desktop environment, like KDE or Gnome, is good enough to operate without issues. It’s all a matter of preference for the user, although the system allows switching from one environment to another. Some programs will work in one environment and not work on the other, so it could also be considered a factor in selecting which environment to use.",
+        "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
+        "Date of source": "29 December 2021",
+        "Question?": "7",
+        "Keyword": "?DE",
+        "Usage": "Swap environment for different apps"
+    },
+    {
+        "id": "16LVX",
+        "Header": "10) What is the basic difference between BASH and DOS?",
+        "Description_Content": "BASH commands are case sensitive while DOS commands are not. Under BASH, / character is a directory separator and | acts as an escape character. Under DOS, / serves as a command argument delimiter and | is the directory separator. DOS follows a convention in naming files, which is 8 character file name followed by a dot and 3 characters for the extension. BASH follows no such convention.",
+        "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
+        "Date of source": "29 December 2021",
+        "Question?": "8",
+        "Keyword": "?DOS",
+        "Usage": "Difference between bash and dos"
+    },
+    {
+        "id": "E4POH",
+        "Header": "12) What is the basic difference between BASH and DOS?",
+        "Description_Content": "BASH commands are case sensitive while DOS commands are not. Under BASH, / character is a directory separator and | acts as an escape character. Under DOS, / serves as a command argument delimiter and | is the directory separator. DOS follows a convention in naming files, which is 8 character file name followed by a dot and 3 characters for the extension. BASH follows no such convention.",
+        "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
+        "Date of source": "29 December 2021",
+        "Question?": "10",
+        "Keyword": "?DOS",
+        "Usage": "Difference between bash and dos"
     }
 ]

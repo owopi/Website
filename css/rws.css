@@ -1,8 +1,7 @@
 /* Responsive web design css file */
-/* are you actually here? :sob: */
 /* the different table widths */
 @media only screen and (min-width: 480) {
-    /* For tablets: */
+    /* For phone: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}
@@ -15,10 +14,10 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
+    
   }
   @media only screen and (min-width: 640px) {
     /* For desktop: */
-    /* tell me if u want extra  */
     /* this will adjust those with col classes */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -41,7 +40,7 @@
     display: table;
   } 
 
-  * {
+  a[class*=faq] {
     box-sizing: border-box;
   }
 

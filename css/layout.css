@@ -48,7 +48,7 @@ h2
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style:normal;
-    font-size: calc(var(--h1) - 24px);
+    font-size: calc(var(--h1) - 10px);
     color: #E85F5C;
     text-align: center;
 }

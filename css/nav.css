@@ -38,7 +38,7 @@ a:active {
     color: #B83952;
     cursor: pointer;
     padding: 0;
-    z-index: 2  ;
+    z-index: 2;
     font-size: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -54,7 +54,7 @@ a:active {
     position: absolute;
     left: 0;
     top: calc(100% + .25rem);
-    background-color: #CEEEBF;
+    background-color: #EDEEC0;
     padding: .25rem;
     /* Bends the borders */
     border-radius: .25rem;
@@ -114,10 +114,10 @@ a:active {
     background-color: #EECFBF;
     height: clamp(50px, 110px, 100%);
     width: clamp(480px,100%,1900px);
-    margin: 10px;
+    margin: 5px;
     top: -0.5%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 .arrow {
     border: solid #B83952;

@@ -7,6 +7,7 @@
     <link href="css/layout.css?version=1" rel="stylesheet" type="text/css">
     <link href="css/nav.css?version=2" rel="stylesheet" type="text/css">
     <link href="css/faq.css?version=3" rel="stylesheet" type="text/css">
+    <link href="css/rws.css?version=3" rel="stylesheet" type="text/css">
     <script src="javascript/dropdown.js?version=2" defer type="text/javascript"></script>
     <script src="javascript/main.mjs?version=1" defer type="module"></script>
     <script src="javascript/api.mjs?123123" defer type="text/javascript"></script>
@@ -34,7 +35,10 @@
                             </div>
                         </div>
                     </div>
-                        <a href="faq.html" class="faq">FAQ</a>
+                    <div class="row">
+                        <a href="index.html" class="faq col-1 col-s-1">Homepage</a>
+                        <a href="faq.html" class="faq col-1 col-s-1">FAQ</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,17 +49,19 @@
         <div class="whitespace row behind"></div>
         <div class="">
             <label class="search-pos" for="search" title="Type something and itll find the link">Search Faq</label>
-            <input type="search" id="search">
+            <input type="search" id="search" search>
         </div>
     </div>
 
-    <div class="faq__links"></div>
+        <div class="whitespace"></div>
+        <div class="whitespace"></div>
+
+    <div class="faq__links" data-user-container></div>
     
     <template data-user-template>
         <div class="card">        
-            <a class="main__links"></a>
-            <a class="description__links"></a>
-            <a class="description__links"></a>
+            <a class="question__links" questions></a>
+            <a class="description__links" answers></a>
         </div>
     </template>
 </body>
