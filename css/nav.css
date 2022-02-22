@@ -148,3 +148,6 @@ a:active {
     display: block;
     margin-bottom: 1rem;
 }
+.minimized {
+    margin-left: max(2rem);
+}
