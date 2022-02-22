@@ -8,21 +8,26 @@
     position: absolute;
     /* It is custom coded to fit all content to atleast 480px as that is the smallest average phone width */
     left: 14%;
-    left: max(17%);
+    left: max(20%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     z-index: 1;
     color: #B83952;
+    margin-left: 120px;
+    margin-top: 10px;
+    font-size: 0.5em;
 }
 .faq:nth-of-type(2) {
-    left: 26%
+    left: 30%
 }
 .faq:hover {
     border: 1px solid #000000;
     color: #CE5F75;
 
 }
+@media (min-width: 480px) {
 
+}
 .faq__links {
     display: flex;
     flex-direction: column;

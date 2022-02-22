@@ -152,3 +152,7 @@ td, th {
 tr:nth-child(even) {
     background-color: #D9DB76;
 }
+
+.underline {
+    text-decoration: underline;
+}
