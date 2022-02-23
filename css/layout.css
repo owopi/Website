@@ -120,6 +120,7 @@ ul > li{
 .box__container {
     margin-inline: auto;
     width: min(90%, 70.5rem);
+    top: -10%;
 }
 .middle__text {
     display: flex;

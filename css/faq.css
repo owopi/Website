@@ -17,16 +17,48 @@
     margin-top: 10px;
     font-size: 0.5em;
 }
-.faq:nth-of-type(2) {
-    left: 30%
+@media only screen and (min-width: 1200px) {
+    .separate {
+        left: 100px;
+    }
+    .header {
+        top: -10px;
+    }
+    .header:nth-of-type(2) {
+        color: red;
+    }
+    .faq:nth-of-type(2) {
+        left: 30%
+    }
+    .faq:nth-of-type(3) {
+        left: 23.8%
+    }
+    .faq:nth-of-type(4) {
+        left: 34.8%
+    }
 }
+
 .faq:hover {
     border: 1px solid #000000;
     color: #CE5F75;
 
 }
-@media (min-width: 480px) {
-
+@media (min-width: 665px) {
+    .faq:nth-of-type(2){
+        left: 10%;
+    }
+    .faq {
+        font-size: 1rem;
+        top: -5px;
+    }
+}
+@media (min-width: 1335px) {
+    .faq:nth-of-type(2){
+        left: 11.7%;
+    }
+    .faq {
+        font-size: 1rem;
+    }
 }
 .faq__links {
     display: flex;

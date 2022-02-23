@@ -46,6 +46,7 @@ a:active {
 
 .dropdown {
     position: relative;
+    padding-left: 10px;
     /* display: grid; */
     /* align-items: center; */
     /* justify-content: center; */
@@ -54,12 +55,15 @@ a:active {
 .menu {
     position: absolute;
     left: 0;
-    top: calc(100% + .25rem);
+    /* This makes the dropdown sit below nav bar */
+    top: calc(100% + 1.3rem);
+    /* This makes the dropdown sit below the text */
+    /* top: calc(100% + .25rem); */
     background-color: #EDEEC0;
     padding: .25rem;
     /* Bends the borders */
     border-radius: .25rem;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
     /* Makes the content appear */
     opacity: 0;
     /*gives it a falling effect*/
@@ -89,7 +93,7 @@ a:active {
 
 .distros {
     display: grid;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(3, max-content);
     gap: 1rem;
 }
 
@@ -105,14 +109,14 @@ a:active {
 }
 .container {
     width: 1800px;
-    position: fixed;
+    position: relative;
     font-size: max(1rem);
     font-size: min(5vw, 5vh);
     height: 40px;
-    width: clamp(1800px, 900px, );
+    width: clamp(900px, 1900px, 2344px);
     top: 5%;
-    padding-left: 1em;
     vertical-align: middle;
+    padding: 3rem 0;
 }
 .navbarbg {
     box-sizing: border-box;
@@ -120,9 +124,12 @@ a:active {
     height: clamp(50px, 110px, 100%);
     width: clamp(480px,100%,1900px);
     margin: 5px;
-    top: -0.5%;
+    top: 10%;
     position: fixed;
     z-index: 2;
+}
+.header {
+    position: relative;
 }
 .arrow {
     border: solid #B83952;
@@ -147,4 +154,7 @@ a:active {
 .splitword {
     display: block;
     margin-bottom: 1rem;
+}
+.minimized {
+    margin-left: max(2rem);
 }

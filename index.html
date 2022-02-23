@@ -15,26 +15,28 @@
         <script src="javascript/dropdown.js?version=2" defer type="text/javascript"></script>
     </head>
     <body>
-        <section class="whitespace row">
-            <div class="bow__container">
-                <!-- <br><br><br><br><br><br> -->
-                <div class="max__width col-3 col-s-3">
+        <div class="row">
+            <div class="box__container">
+                <!-- Intentional line breaks to provide spacing w/o css so as to avoid conflicts with position relative elements at navbar -->
+                <!-- could be avoided with zindex so relative or not itll overlap but prefer extra space -->
+                <div class="Main_Header max__width col-3 col-s-3">
+                    <header class="font">Linux Operating Systems</header>
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="row">
-                    <div class="box__container">
-                        <!-- Intentional line breaks to provide spacing w/o css so as to avoid conflicts with position relative elements at navbar -->
-                        <!-- could be avoided with zindex so relative or not itll overlap but prefer extra space -->
-                        <div class="Main_Header max__width col-3 col-s-3">
-                            <header class="font">Linux Operating Systems</header>
-                        </div>
-                    </div>
+        </div>
+    </section>
+    <section class="whitespace row">
+        <div class="bow__container">
+            <!-- <br><br><br><br><br><br> -->
+            <div class="max__width col-3 col-s-3" >
             </div>
-        </section>
+        </div>
+        <br>
+        <span id="RelLink1"></span>
+    </section>
+    <section>
 
-        <div class="navbarbg">
+        <div class="navbarbg" >
             <div class="container">
                 <div class="header">
                     <div class="dropdown" data-dropdown>
@@ -45,7 +47,7 @@
                                     <p class="drop__title"><u><strong>Debian</strong></u></p>
                                 </div>
                                 <div class="dropdown__links">
-                                    <a href="distros/parrot.html">Parrot Os</a>
+                                    <a href="distros/parrot.html">Parrot OS</a>
                                 </div>
                                 <div class="dropdown-heading">
                                     <p class="drop__title"><u><strong>Ubuntu</strong></u></p>
@@ -59,20 +61,20 @@
                                     <p class="drop__title"><u><strong>Arch</strong></u></p>
                                 </div>
                                 <div class="dropdown__links">
-                                    <a href="distros/arch.html">Arch Linux Os</a>
+                                    <a href="distros/arch.html">Arch Linux</a>
                                 </div>
                                 <div class="dropdown-heading">
                                     <p class="drop__title"><u><strong>Gentoo</strong></u></p>
                                 </div>
                                 <div class="dropdown__links">
-                                    <a href="distros/gentoo.html">Gentoo Os</a>
+                                    <a href="distros/gentoo.html">Gentoo OS</a>
                                 </div>
                                 <div class="dropdown-heading">
                                     <p class="drop__title"><u><strong>Red Hat</strong></u></p>
                                 </div>
                                 <div class="dropdown__links">
-                                    <a href="#">Enterprise Linux</a>
-                                    <a href="distros/cent.html">Cent os</a>
+                                    <a href="#" class="minimized">Enterprise Linux</a>
+                                    <a href="distros/cent.html">Cent OS</a>
                                     <a href="distros/fedora.html">Fedora</a>
                                 </div>
                                 <div class="dropdown-heading">
@@ -81,11 +83,16 @@
                                 <div class="dropdown__links">
                                     <a href="distros/mxlinux.html">MX Linux</a>
                                     <a href="distros/popos.html">Pop OS</a>
-                                    <a href="distros/elementary.html">Elementary os</a>
+                                    <a href="distros/elementary.html">Elementary OS</a>
                                 </div>
                             </div>
                         </div>
-                            <a href="faq.html" class="faq">FAQ</a>
+                            <div class="separate">
+                                <a href="faq.html" class="faq">FAQ</a>
+                                <a href="#RelLink1" class="faq">What is linux?</a>
+                                <a href="#RelLink2" class="faq">What are Distrbutions?</a>
+                                <a href="#RelLink3" class="faq">Advantages of Linux</a>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -101,19 +108,20 @@
             </div>
         </section>
         <section>
+            <span id="RelLink2"></span>
             <div class="textCenter row">
             <!-- why separated? so the content dont group as one container and overlap -->
             <h2 class="text-center">What is Linux?</h2>
             <div class="box__container">
                 <div class="col-3 col-s-3 max__width">
                     <p>Linux is similar to other operating systems you may have used before, including Windows, macOS or iOS (Android is based on a modified Linux<a class="underline" href="https://en.wikipedia.org/wiki/Kernel_(operating_system)">kernel</a>). Like other operating systems, Linux has a graphical interface and the same types of software you can find on all your other devices. In many cases, a software creator may have made a Linux version of the same program you use on other operating systems. Linus Torvalds created Linux in 1991. He was a student at the University of Helsinki. He built Linux as a free and open-source alternative to Minix, an operating system used in an academic setting.</p>
-                    
                 </div>
             </div>
             </div>
         </section>
-        </div>
+    </div>
         <div class="textCenter row">
+            <span id="RelLink3"></span>
             <h2 class="text-center">What are Distributions?</h2>
             <div class="box__container">
                 <div class="col-3 col-s-3 max__width">
