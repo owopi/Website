@@ -14,14 +14,10 @@ html {
 }
 body
 {
-    background-color: #EDEEC0;
+    background-color: #F7EBE8;
 
 }
-@font-face
-{
-    font-family: "CustomFont";
-    src: url("Brexterdemo-1G4Pe.otf")format("opentype");
-}
+
 header {
     position: relative;
     display: flex;
@@ -156,4 +152,60 @@ tr:nth-child(even) {
 
 .underline {
     text-decoration: underline;
+}
+
+.sidebar {
+    height: 120%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 50px 0;
+    background-color: #444140;
+    /* Navbarbg has z-index of 2 so it has to be higher */
+    z-index: 3;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: .5em;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(127,204,25, 0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #E85F5C;
+    outline: 1px solid black;
+}
+.sidebar div {
+    padding: .25rem;
+    font-size: large;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: auto;
+}
+    
+.body-text {
+    margin-left: 200px !important;
+}
+
+.dropdown__links {
+        text-align: center !important;
+        color: white;
+}
+.dropdown-heading {
+        text-align: center !important;
+        color: white;
+}
+
+.expand:first-of-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
 }
