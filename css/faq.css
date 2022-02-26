@@ -52,12 +52,23 @@
         top: -5px;
     }
 }
-@media (min-width: 1335px) {
-    .faq:nth-of-type(2){
-        left: 11.7%;
-    }
-    .faq {
+@media only screen and (max-width: 600px) {
+    .dropdown-heading {
+        display: block;
         font-size: 1rem;
+        text-align: center;
+    }
+    .scrollbar {
+        display: flex;
+        height: 200px;
+        width: 200px;
+        box-sizing: border-box;
+        flex-direction: column;
+        line-height: 1.2rem;
+    }
+    .dropdown__links {
+        font-size: 1rem;
+        text-align: center;
     }
 }
 .faq__links {

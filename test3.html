@@ -21,34 +21,42 @@
                 <!-- could be avoided with zindex so relative or not itll overlap but prefer extra space -->
                 <div class="Main_Header max__width col-3 col-s-3">
                     <header class="font">Linux Operating Systems</header>
+                    <!--currently covered by navbar, have to remove probably-->
                 </div>
             </div>
         </div>
     </section>
+    <!-- MOM!! -->
     <section class="whitespace row">
         <div class="bow__container">
             <!-- <br><br><br><br><br><br> -->
             <div class="max__width col-3 col-s-3" >
             </div>
         </div>
-        <br>
         <span id="RelLink1"></span>
-     <!--You there?-->
-     <!-- i am alive now-->
     </section>
-    <section>
-        <div class="sidebar">
+    <section class="bottom">
+        <div class="sidebar" id="side">
+            <li class="logo">
+                <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
+            </li>
             <div class="dropdown-heading">
                 <p class="drop__title"><u><strong>Debian</strong></u></p>
             </div>
             <div class="dropdown__links">
-                <a href="distros/parrot.html">Parrot OS</a>
+                <a href="distros/parrot.html">
+                    <span>P</span>
+                    <span class="link_text_hide" id="click1">Parrot OS</span>
+                </a>
             </div>
             <div class="dropdown-heading">
                 <p class="drop__title"><u><strong>Ubuntu</strong></u></p>
             </div>
             <div class="dropdown__links">
-                <a href="distros/zorin.html">Zorin OS</a>
+                <a href="distros/zorin.html">
+                    <span>Z</span>
+                    <span class="link_text_hide" id="click2">Zorin OS</span>
+                </a>
                 <a href="distros/mint.html">Linux Mint</a>
                 <a href="distros/" style="display: none;">Oracle Linux</a>
             </div>
@@ -56,13 +64,19 @@
                 <p class="drop__title"><u><strong>Arch</strong></u></p>
             </div>
             <div class="dropdown__links">
-                <a href="distros/arch.html">Arch Linux</a>
+                <a href="distros/arch.html">
+                    <span>A</span>
+                    <span class="link_text_hide" id="click3">Arch Linux</span>
+                </a>
             </div>
             <div class="dropdown-heading">
                 <p class="drop__title"><u><strong>Gentoo</strong></u></p>
             </div>
             <div class="dropdown__links">
-                <a href="distros/gentoo.html">Gentoo OS</a>
+                <a href="distros/arch.html">
+                    <span>G</span>
+                    <span class="link_text_hide" id="click4">Gentoo OS</span>
+                </a>
             </div>
             <div class="dropdown-heading">
                 <p class="drop__title"><u><strong>Red Hat</strong></u></p>
@@ -80,9 +94,11 @@
                 <a href="distros/popos.html">Pop OS</a>
                 <a href="distros/elementary.html">Elementary OS</a>
             </div>
+            <div class="whitespace"></div>
+            <div class="whitespace"></div>
         </div>
     </section>
-    <div class="navbarbg top" >
+    <div class="navbarbg" >
         <div class="container">
             <div class="header">
                 <div class="separate">
@@ -98,7 +114,7 @@
         <span class="Main"></span>
         <section>
             <div class="row">
-                <div class="box__container">
+                <div class="box__container"> 
                     <div class="col-3 col-s-3">
                         <h1 id="Main_Title">Linux Distributions</h1>
                     </div>
@@ -136,7 +152,7 @@
                                 <th>
                                     <h2 class="expand">Advantages of Linux</h2>
                                 </th>
-                            </tr><br>
+                            </tr>
                         </table>
                         <div class="col-3 col-s-3 max__width">
                             <table>
@@ -159,7 +175,7 @@
                                 </tr>
                                 <tr>
                                     <td>Large Community</td>
-                                    <td>The number of community users active on Linux forums such as <a class="underline" href="https://askubuntu.com/">AskUbuntu</a> is more than the number of active members on any Windows-focused forum. There are a lot of active Linux users who are always ready to respond to any Linux questions or issues you may have&#8212;no more scratching your head for hours because something won&#39;t work! Within minutes of posting a thread, you may expect a reply and a detailed solution at no cost! Not to forget, you can just search for a similar thread on the web for a solution instead.</td>
+                                    <td>The number of community users active on Linux forums such as <a class="underline" href="https://askubuntu.com/">AskUbuntu</a> is more than the number of active members on any Windows-focused forum. There are a lot of active Linux users who are always ready to respond to any Linux questions or issues you may have&#8212;no more scratching your head for hours because something won&rsquo;t work! Within minutes of posting a thread, you may expect a reply and a detailed solution at no cost! Not to forget, you can just search for a similar thread on the web for a solution instead.</td>
                                 </tr>
                                 <tr>
                                     <td>Stable</td>

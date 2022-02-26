@@ -11,6 +11,7 @@
     <script src="javascript/dropdown.js?version=2" defer type="text/javascript"></script>
     <script src="javascript/main.mjs?version=1" defer type="module"></script>
     <script src="javascript/api.mjs?123123" defer type="text/javascript"></script>
+    <script src="javascript/dom.js?123123" defer type="text/javascript"></script>
 </head>
 <body>
    <div class="navbarbg">
@@ -19,7 +20,7 @@
                 <div class="dropdown" data-dropdown1>
                     <button class="link" data-dropdown-button1>List of Distributions</button>
                     <div class="menu distros">
-                        <div class="scrollbar">
+                        <div class="scrollbar" id="new">
                             <div class="dropdown-heading">
                                 <p class="drop__title"><u><strong>Debian</strong></u></p>
                             </div>
@@ -62,11 +63,16 @@
                                 <a href="distros/popos.html">Pop os</a>
                                 <a href="distros/elementary.html">Elementary os</a>
                             </div>
+                            <div class="dropdown-heading" id="home">
+                                <p class="drop__title"><u><strong>Homepage</strong></u></p>
+                            </div>
+                            <div class="dropdown__links" id="homelink">
+                                <a href="distros/test3.html">Homepage</a>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <a href="test3.html" class="faq col-1 col-s-1">Homepage</a>
-                        <a href="faq.html" class="faq col-1 col-s-1">FAQ</a>
+                        <a href="test3.html" id="homelink2" class="faq col-1 col-s-1">Homepage</a>
                     </div>
                 </div>
             </div>
