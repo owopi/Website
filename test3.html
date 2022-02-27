@@ -26,7 +26,6 @@
             </div>
         </div>
     </section>
-    <!-- MOM!! -->
     <section class="whitespace row">
         <div class="bow__container">
             <!-- <br><br><br><br><br><br> -->
@@ -35,7 +34,7 @@
         </div>
         <span id="RelLink1"></span>
     </section>
-    <section class="bottom">
+    <section class="hide">
         <div class="sidebar" id="side">
             <li class="logo">
                 <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
@@ -45,54 +44,79 @@
             </div>
             <div class="dropdown__links">
                 <a href="distros/parrot.html">
-                    <span>P</span>
+                    <img src="images/Parrot_OS_logo.svg" alt="P" class="svg">
                     <span class="link_text_hide" id="click1">Parrot OS</span>
+                </a>
+                <a href="distros/mxlinux.html">
+                    <img src="images/MX_Linux_logo.svg" alt="MX" class="svg">
+                    <span class="link_text_hide" id="click2">MX linux</span>
                 </a>
             </div>
             <div class="dropdown-heading">
                 <p class="drop__title"><u><strong>Ubuntu</strong></u></p>
             </div>
             <div class="dropdown__links">
-                <a href="distros/zorin.html">
-                    <span>Z</span>
-                    <span class="link_text_hide" id="click2">Zorin OS</span>
+                <a href="distros/mint.html">
+                    <img src="images/Linux_Mint_logo.svg" alt="Mint" class="svg">
+                    <span class="link_text_hide" id="click3">Linux Mint</span>
                 </a>
-                <a href="distros/mint.html">Linux Mint</a>
-                <a href="distros/" style="display: none;">Oracle Linux</a>
+                <a href="distros/zorin.html">
+                    <!-- <img src="images/Zorin_OS_logo.svg" alt="Z" class="svg"> -->
+                    <!-- <embed src="images/Zorin_OS_logo.svg"/> -->
+                    <span class="zorin">Z</span>
+                    <span class="link_text_hide" id="click4">Zorin OS</span>
+                </a>
+                <a href="distros/popos.html"">
+                    <img src="images/Pop_OS_logo.svg" alt="Pop Os" class="svg">
+                    <span class="link_text_hide" id="click5">Pop!_OS</span>
+                </a>
+                <a href="distros/elementary.html"">
+                    <img src="images/Elementary_OS_logo.svg" alt="Elementary" class="svg">
+                    <span class="link_text_hide" id="click6">Elementary OS</span>
+                </a>
             </div>
             <div class="dropdown-heading">
                 <p class="drop__title"><u><strong>Arch</strong></u></p>
             </div>
             <div class="dropdown__links">
                 <a href="distros/arch.html">
-                    <span>A</span>
-                    <span class="link_text_hide" id="click3">Arch Linux</span>
+                    <img src="images/Arch_Linux_logo.svg" alt="Arch" class="svg">
+                    <span class="link_text_hide" id="click7">Arch Linux</span>
+                </a>
+                <a href="distros/manjaro.html">
+                    <img src="images/Manjaro_logo.svg" alt="Manjaro" class="svg">
+                    <span class="link_text_hide" id="click8">Manjaro OS</span>
                 </a>
             </div>
             <div class="dropdown-heading">
-                <p class="drop__title"><u><strong>Gentoo</strong></u></p>
+                <p class="drop__title"><u><strong>Solus</strong></u></p>
             </div>
             <div class="dropdown__links">
-                <a href="distros/arch.html">
-                    <span>G</span>
-                    <span class="link_text_hide" id="click4">Gentoo OS</span>
+                <a href="distros/solus.html">
+                    <img src="Solus_OS_logo.svg" alt="Solus" class="svg">
+                    <span class="link_text_hide" id="click9">Solus OS</span>
+                </a>
+                <a href="distros/bridge.html">
+                    <img src="images/Ubuntu_Budgie_logo.svg" alt="Budgie" class="svg">
+                    <span class="link_text_hide" id="click10">Ubuntu Budgie</span>
                 </a>
             </div>
             <div class="dropdown-heading">
                 <p class="drop__title"><u><strong>Red Hat</strong></u></p>
             </div>
             <div class="dropdown__links">
-                <a href="#" class="minimized">Enterprise Linux</a>
-                <a href="distros/cent.html">Cent OS</a>
-                <a href="distros/fedora.html">Fedora</a>
-            </div>
-            <div class="dropdown-heading">
-                <p class="drop__title"><u><strong><span class="splitword">Other Cool</span> Distrubutions</strong></u></p>
-            </div>
-            <div class="dropdown__links">
-                <a href="distros/mxlinux.html">MX Linux</a>
-                <a href="distros/popos.html">Pop OS</a>
-                <a href="distros/elementary.html">Elementary OS</a>
+                <a href="#" class="minimized">
+                    <span>E</span>
+                    <span class="link_text_hide" id="click11">Enterprise Linux</span>
+                </a>
+                <a href="distros/oracle.html">
+                    <img src="images/Oracle_logo.svg" alt="oracle"class="svg">
+                    <span class="link_text_hide" id="click12">Ubuntu Budgie</span>
+                </a>
+                <a href="distros/fedora.html">
+                    <img src="images/Fedora_logo.svg" alt="Fedora" class="svg">
+                    <span class="link_text_hide" id="click13">Fedora</span>
+                </a>
             </div>
             <div class="whitespace"></div>
             <div class="whitespace"></div>
@@ -101,22 +125,87 @@
     <div class="navbarbg" >
         <div class="container">
             <div class="header">
-                <div class="separate">
-                    <a href="faq.html" class="faq">FAQ</a>
-                    <a href="#RelLink1" class="faq">What is linux?</a>
-                    <a href="#RelLink2" class="faq">What are Distrbutions?</a>
-                    <a href="#RelLink3" class="faq">Advantages of Linux</a>
+                <div class="separate hide">
+                    <a href="faq.html" class="navigation">FAQ</a>
+                    <a href="#RelLink1" class="navigation">What is Linux?</a>
+                    <a href="#RelLink2" class="navigation">What are Distrbutions?</a>
+                    <a href="#RelLink3" class="navigation">Advantages of Linux</a>
+                </div>
+
+                <div class="navbarbg top hidenav" >
+                    <div class="container">
+                        <div class="header">
+                            <div class="dropdown" data-dropdown>
+                                <button class="link" data-dropdown-button><i class="arrow down"></i>&nbsp;List of Distributions</button>
+                                <div class="menu distros">
+                                    <div class="scrollbar">
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Debian</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="distros/parrot.html">Parrot OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Ubuntu</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="distros/zorin.html">Zorin OS</a>
+                                            <a href="distros/mint.html">Linux Mint</a>
+                                            <a href="distros/" style="display: none;">Oracle Linux</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Arch</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="distros/arch.html">Arch Linux</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Gentoo</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="distros/gentoo.html">Gentoo OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Red Hat</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="#" class="minimized">Enterprise Linux</a>
+                                            <a href="distros/cent.html">Cent OS</a>
+                                            <a href="distros/fedora.html">Fedora</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong><span class="splitword">Other Cool</span> Distrubutions</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="distros/mxlinux.html">MX Linux</a>
+                                            <a href="distros/popos.html">Pop OS</a>
+                                            <a href="distros/elementary.html">Elementary OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Homepage</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="faq.html">FAQ</a>
+                                            <a href="#RelLink1">What is linux?</a>
+                                            <a href="#RelLink2">What are Distrbutions?</a>
+                                            <a href="#RelLink3">Advantages of Linux</a>
+                                            <div class="whitespace"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
- <!--uwu-->
         <span class="Main"></span>
         <section>
-            <div class="row">
+            <div class="title-text">
                 <div class="box__container"> 
-                    <div class="col-3 col-s-3">
-                        <h1 id="Main_Title">Linux Distributions</h1>
+                    <div class="col-3 col-s-3 textCenter row">
+                        <h1 id="Main_Title" class="text-center">Linux Distributions</h1>
                     </div>
                 </div>
             </div>

@@ -17,6 +17,10 @@
     margin-top: 10px;
     font-size: 0.5em;
 }
+.right {
+    float: right;
+    margin-left: 70%;
+}
 @media only screen and (min-width: 1200px) {
     .separate {
         left: 100px;
@@ -33,6 +37,8 @@
     .faq:nth-of-type(3) {
         left: 23.8%
     }
+    /* help ;-; everywhere hurts soo much and i feel like vomitting unlike earlier */
+    /* read discord @w@ */
     .faq:nth-of-type(4) {
         left: 34.8%
     }
@@ -43,34 +49,8 @@
     color: #CE5F75;
 
 }
-@media (min-width: 665px) {
-    .faq:nth-of-type(2){
-        left: 10%;
-    }
-    .faq {
-        font-size: 1rem;
-        top: -5px;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .dropdown-heading {
-        display: block;
-        font-size: 1rem;
-        text-align: center;
-    }
-    .scrollbar {
-        display: flex;
-        height: 200px;
-        width: 200px;
-        box-sizing: border-box;
-        flex-direction: column;
-        line-height: 1.2rem;
-    }
-    .dropdown__links {
-        font-size: 1rem;
-        text-align: center;
-    }
-}
+
+
 .faq__links {
     display: flex;
     flex-direction: column;
@@ -80,14 +60,15 @@
 }
 
 .search-container {
-    padding: 1em 0 1em .5rem;
+    padding: .5em 0 0em .5rem;
     position: fixed;
-    width: 1900px;    
+    width: 1900px;   
+    height: 10%; 
     left: .7%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(68, 68, 68, 1));
+    top: 120px;
+    background: linear-gradient(to top, rgba(255,255,255,0), rgba(68, 68, 68, 1));
     color: white;
     z-index: 1;
-    top: 14%;
 }
 input {
     font-size: 1rem;
@@ -107,9 +88,6 @@ input {
     color: #444;
 }
 
-.hide {
-    display: none;
-}
 
 .behind {
     z-index: 0;
@@ -120,4 +98,8 @@ input {
 
 .search-pos {
     top: -10%;
+}
+
+#homelink2 {
+    text-shadow: 2px 2px #FFF;
 }
