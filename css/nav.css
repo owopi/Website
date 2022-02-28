@@ -40,9 +40,9 @@ a:active {
     color: #B83952;
     cursor: pointer;
     padding: 0;
-    left: 1.9rem;
+    left: 1.3rem;
     z-index: 2;
-    font-size: .6em;
+    font-size: .8em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 50px;
 }
