@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sources</title>
+        <link href="../css/faq.css?1234" rel="stylesheet" type="text/css">
+        <link href="../css/layout.css?6142" rel="stylesheet" type="text/css">
+        <link href="../css/nav.css?4321" rel="stylesheet" type="text/css">
+        <link href="../css/distros.css?312" rel="stylesheet" type="text/css">
+        <script src="../javascript/main.mjs?version=1" defer></script>
+        <script src="../javascript/dropdown.js?version=2" defer></script>
+    </head>
+    <body>
+    <div class="navbardistro" >
+        <div class="container">
+            <div class="header">
+                <div class="separate hide">
+                    <a href="faq.html" class="navigation">Other Links</a>
+                    <a href="#RelLink1" class="navigation">QOL</a>
+                    <a href="#RelLink2" class="navigation">Benefits</a>
+                    <a href="#RelLink3" class="navigation">Advantages of Linux</a>
+                    <a href="../test3.html" class="navigation">Homepage</a>
+                </div>
+
+                <div class="navbarbg top hidenav" >
+                    <div class="container">
+                        <div class="header">
+                            <div class="dropdown" data-dropdown>
+                                <button class="link" data-dropdown-button><i class="arrow down"></i>&nbsp;List of Distributions</button>
+                                <div class="menu distros">
+                                    <div class="scrollbar">
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Debian</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="distros/parrot.html">Parrot OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Ubuntu</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="distros/zorin.html">Zorin OS</a>
+                                            <a href="distros/mint.html">Linux Mint</a>
+                                            <a href="distros/" style="display: none;">Oracle Linux</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Arch</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="distros/arch.html">Arch Linux</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Gentoo</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="distros/gentoo.html">Gentoo OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Red Hat</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="#" class="minimized">Enterprise Linux</a>
+                                            <a href="distros/cent.html">Cent OS</a>
+                                            <a href="distros/fedora.html">Fedora</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong><span class="splitword">Other Cool</span> Distrubutions</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="distros/mxlinux.html">MX Linux</a>
+                                            <a href="distros/popos.html">Pop OS</a>
+                                            <a href="distros/elementary.html">Elementary OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Homepage</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="faq.html">FAQ</a>
+                                            <a href="#RelLink1">What is linux?</a>
+                                            <a href="#RelLink2">What are Distrbutions?</a>
+                                            <a href="#RelLink3">Advantages of Linux</a>
+                                            <div class="whitespace"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="hide">
+        <div class="sidebar" id="side">
+            <menu>
+            <li class="logo">
+                <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
+            </li>
+            </menu>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Debian</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="distros/parrot.html">
+                    <img src="../images/Parrot_OS_logo.svg" alt="P" class="svg">
+                    <span class="link_text_hide" id="click1">Parrot OS</span>
+                </a>
+                <a href="distros/mxlinux.html">
+                    <img src="../images/MX_Linux_logo.svg" alt="MX" class="svg">
+                    <span class="link_text_hide" id="click2">MX linux</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Ubuntu</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="distros/mint.html">
+                    <img src="../images/Linux_Mint_logo.svg" alt="Mint" class="svg">
+                    <span class="link_text_hide" id="click3">Linux Mint</span>
+                </a>
+                <a href="distros/zorin.html">
+                    <!-- <img src="../images/Zorin_OS_logo.svg" alt="Z" class="svg"> -->
+                    <!-- <embed src="../images/Zorin_OS_logo.svg"/> -->
+                    <span class="zorin">Z</span>
+                    <span class="link_text_hide" id="click4">Zorin OS</span>
+                </a>
+                <a href="distros/popos.html">
+                    <img src="../images/Pop_OS_logo.svg" alt="Pop Os" class="svg">
+                    <span class="link_text_hide" id="click5">Pop!_OS</span>
+                </a>
+                <a href="distros/elementary.html">
+                    <img src="../images/Elementary_OS_logo.svg" alt="Elementary" class="svg">
+                    <span class="link_text_hide" id="click6">Elementary OS</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Arch</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="distros/arch.html">
+                    <img src="../images/Arch_Linux_logo.svg" alt="Arch" class="svg">
+                    <span class="link_text_hide" id="click7">Arch Linux</span>
+                </a>
+                <a href="distros/manjaro.html">
+                    <img src="../images/Manjaro_logo.svg" alt="Manjaro" class="svg">
+                    <span class="link_text_hide" id="click8">Manjaro OS</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Solus</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="distros/solus.html">
+                    <img src="../images/Solus_OS_logo.svg" alt="Solus" class="svg">
+                    <span class="link_text_hide" id="click9">Solus OS</span>
+                </a>
+                <a href="distros/bridge.html">
+                    <img src="../images/Ubuntu_Budgie_logo.svg" alt="Budgie" class="svg">
+                    <span class="link_text_hide" id="click10">Ubuntu Budgie</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Red Hat</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="#" class="minimized">
+                    <span>E</span>
+                    <span class="link_text_hide" id="click11">Enterprise Linux</span>
+                </a>
+                <a href="distros/oracle.html">
+                    <img src="../images/Oracle_logo.svg" alt="oracle" class="svg">
+                    <span class="link_text_hide" id="click12">Ubuntu Budgie</span>
+                </a>
+                <a href="distros/fedora.html">
+                    <img src="../images/Fedora_logo.svg" alt="Fedora" class="svg">
+                    <span class="link_text_hide" id="click13">Fedora</span>
+                </a>
+            </div>
+            <div class="whitespace"></div>
+            <div class="whitespace"></div>
+        </div>
+    </section>
+    <span id="#RelLink3"></span>
+    <div class="textCenter row">
+        <div class="box__container">
+            <h1>Sources</h1>
+            <h2>Parrot OS</h2>
+            <ul>
+                <li>Aslam, Arslan. Anonsurf, 2020, <a class="underline" href="https://linuxhint.com/anonsurf/">linuxhint.com/anonsurf/</a>.</li>
+                <li>hackractual. &lsquo;Anonsurf.&rsquo; Anonsurf, 3 May 2018, <a class="underline" href="https://freesoft.dev/program/132052001">freesoft.dev/program/132052001</a>.</li>
+                <li>Parrot OS English Doc Team. &lsquo;Parrot Documentation.&rsquo; What Is Parrot - Parrot Documentation, <a class="underline" href="https://www.parrotsec.org/docs/what-is-parrot.html">www.parrotsec.org/docs/what-is-parrot.html</a>.</li>
+                <li>Paul. &lsquo;ParrotOS vs Kali Linux: How to Choose the Best.&rsquo; Edureka, 25 Nov. 2020, <a class="underline" href="https://www.edureka.co/blog/parrot-os-vs-kali-linux/">www.edureka.co/blog/parrot-os-vs-kali-linux/</a>.</li>
+            </ul>
+            <h2>MX Linux</h2>
+            <ul>
+                <li>MX Linux. &lsquo;MX Linux.&rsquo; MX, 2 Feb. 2022, <a class="underline" href="https://mxlinux.org/">mxlinux.org/</a>.</li>
+                <li>&lsquo;MX Linux.&rsquo; Distrowatch.com, 7 Feb. 2022, <a class="underline" href="https://distrowatch.com/table.php?distribution=mx">distrowatch.com/table.php?distribution=mx</a>.</li>
+                <li>Wallen, Jack, et al. &lsquo;MX Linux Is the Most Downloaded Linux Desktop Distribution, and Now I Know Why.&rsquo; TechRepublic, 19 Apr. 2021, <a class="underline" href="http://www.techrepublic.com/article/mxlinux-is-the-most-downloaded-linux-desktop-distribution-and-now-i-know-why/">www.techrepublic.com/article/mxlinux-is-the-most-downloaded-linux-desktop-distribution-and-now-i-know-why/</a>.</li>
+            </ul>
+            <h2>Linux Mint</h2>
+            <ul>
+                <li>King, Bertel. &lsquo;10 Reasons to Fall in Love with Linux Mint.&rsquo; MUO, 29 May 2018, <a class="underline" href="http://www.makeuseof.com/tag/reasons-to-love-linux-mint/">www.makeuseof.com/tag/reasons-to-love-linux-mint/</a>.</li>
+                <li>Mint, Linux. &lsquo;About Linux Mint.&rsquo; About Linux Mint - Linux Mint, 2021, <a class="underline" href="http://www.linuxmint.com/about.php">www.linuxmint.com/about.php</a>.</li>
+                <li>ndzadmpanel. &lsquo;Top Advantages of Linux Mint: 10 Reasons Why to Try It.&rsquo; NDZ, 18 Oct. 2019, <a class="underline" href="http://www.ndimensionz.com/2019/10/18/top-advantages-of-linux-mint-reasons-why-to-try-it/">www.ndimensionz.com/2019/10/18/top-advantages-of-linux-mint-reasons-why-to-try-it/</a>.</li>
+                <li>Okoi, Divine. &lsquo;10 Reasons Why Linux Mint Is More Popular than Ubuntu.&rsquo; FOSSMint, 20 Apr. 2021, <a class="underline" href="http://www.fossmint.com/reasons-to-use-linux-mint/">www.fossmint.com/reasons-to-use-linux-mint/</a>.</li>
+                <li>Prakash, Abhishek. &lsquo;8 Reasons Why Linux Mint Is Better than Ubuntu for Linux Beginners.&rsquo; It's FOSS, 29 Jan. 2021, <a class="underline" href="https://itsfoss.com/linux-mint-vs-ubuntu/">itsfoss.com/linux-mint-vs-ubuntu/</a>.</li>
+            </ul>
+            <h2>Zorin OS</h2>
+            <ul>
+                <li>Das, Ankush. &lsquo;Zorin OS 16 Is a Visual Spectacle! You Can Download This New Linux Release Right Now.&rsquo; It's FOSS News, 17 Aug. 2021, <a class="underline" href="https://news.itsfoss.com/zorin-os-16-release/">news.itsfoss.com/zorin-os-16-release/</a>.</li>
+                <li>Prakash, Abhishek. &lsquo;Zorin OS: From the Hobby Project of Two Teenagers to a Growing Startup.&rsquo; It's FOSS, 1 Nov. 2017, <a class="underline" href="https://itsfoss.com/zorin-os-interview/">itsfoss.com/zorin-os-interview/</a>.</li>
+                <li>Wikipedia Community. &lsquo;Zorin OS.&rsquo; Wikipedia, Wikimedia Foundation, 17 Feb. 2022, <a class="underline" href="https://en.wikipedia.org/wiki/Zorin_OS">en.wikipedia.org/wiki/Zorin_OS</a>.</li>
+                <li>Zorin OS Developers. &lsquo;Zorin OS - Make Your Computer Better.&rsquo; Zorin, <a class="underline" href="https://zorin.com/os/">zorin.com/os/</a>.</li>
+            </ul>
+            <h2>Pop!_OS</h2>
+            <ul>
+                <li>Abubakar, Mohammed. &lsquo;What Is Pop!_os?&rsquo; How, How-To Geek, 13 Oct. 2021, <a class="underline" href="http://www.howtogeek.com/757260/what-is-pop-os/">www.howtogeek.com/757260/what-is-pop-os/</a>.</li>
+                <li>&lsquo;Pop!_os.&rsquo; Distrowatch.com, 7 Feb. 2022, <a class="underline" href="https://distrowatch.com/table.php?distribution=popos">distrowatch.com/table.php?distribution=popos</a>.</li>
+            </ul>
+            <h2>Elementary OS</h2>
+            <ul>
+                <li>Gilbertson, Scott. &lsquo;A Tour of Elementary OS, Perhaps the Linux World's Best Hope for the Mainstream.&rsquo; Ars Technica, 28 Dec. 2018, <a class="underline" href="https://arstechnica.com/gadgets/2018/12/a-tour-of-elementary-os-perhaps-the-linux-worlds-best-hope-for-the-mainstream/">arstechnica.com/gadgets/2018/12/a-tour-of-elementary-os-perhaps-the-linux-worlds-best-hope-for-the-mainstream/</a>.</li>
+                <li>&lsquo;Elementary OS.&rsquo; Distrowatch.com, 7 Feb. 2022, <a class="underline" href="https://distrowatch.com/table.php?distribution=elementary">distrowatch.com/table.php?distribution=elementary</a>.</li>
+                <li>elementary, Inc. &lsquo;The Thoughtful, Capable, and Ethical Replacement for Windows and Macos ⋅ Elementary OS.&rsquo; 2022, <a class="underline" href="https://elementary.io/">elementary.io/</a>.</li>
+            </ul>
+            <h2>Arch Linux</h2>
+            <ul>
+                <li>Bhalla, Wini. &lsquo;What Is Arch Linux and Who Uses It?&rsquo; MUO, 8 Sept. 2021, <a class="underline" href="http://www.makeuseof.com/what-is-arch-linux/">www.makeuseof.com/what-is-arch-linux/</a>.</li>
+                <li>obitorasu. &lsquo;What Is Arch Linux?&rsquo; Edited by Dasguptabhargav, GeeksforGeeks, 4 June 2021, <a class="underline" href="http://www.geeksforgeeks.org/what-is-arch-linux/">www.geeksforgeeks.org/what-is-arch-linux/</a>.</li>
+                <li>Prakash, Abhishek. &lsquo;Why People Are Crazy about Arch Linux? What's so Special about It?&rsquo; It's FOSS, 22 Dec. 2021, <a class="underline" href="https://itsfoss.com/why-arch-linux/">itsfoss.com/why-arch-linux/</a>.</li>
+            </ul>
+            <h2>Manjaro</h2>
+            <ul>
+                <li>&lsquo;Manjaro Linux.&rsquo; Distrowatch.com, 28 Feb. 2022, <a class="underline" href="https://distrowatch.com/table.php?distribution=manjaro">distrowatch.com/table.php?distribution=manjaro</a>.</li>
+                <li>Manjaro. &lsquo;What Is Manjaro.&rsquo; Manjaro, 2022, <a class="underline" href="https://manjaro.org/what-is-manjaro/">manjaro.org/what-is-manjaro/</a>.</li>
+                <li>Paul, John. &lsquo;7 Reason Why I Use Manjaro Linux and You Should Too.&rsquo; It's FOSS, 26 Sept. 2018, <a class="underline" href="https://itsfoss.com/why-use-manjaro-linux/">itsfoss.com/why-use-manjaro-linux/</a>.</li>
+            </ul>
+            <h2>Solus OS</h2>
+            <ul>
+                <li>Kromer, Florian. &lsquo;Solus Budgie.&rsquo; Medium, Geek Culture, 11 Sept. 2021, <a class="underline" href="https://medium.com/geekculture/solus-budgie-e461f7b90b40">medium.com/geekculture/solus-budgie-e461f7b90b40</a>.</li>
+                <li>Leiva-Gomez, Miguel. &lsquo;Solus OS Review: A Linux Distribution That Does More with ...&rsquo; Maketecheasier, 3 Aug. 2021, <a class="underline" href="http://www.maketecheasier.com/solus-os-review/">www.maketecheasier.com/solus-os-review/</a>.</li>
+                <li>Solus OS Developers. &lsquo;Download.&rsquo; Solus, 2022, <a class="underline" href="https://getsol.us/download/">getsol.us/download/</a>.</li>
+                <li>Wikipedia Community. &lsquo;Solus (Operating System).&rsquo; Wikipedia, Wikimedia Foundation, 18 Feb. 2022, <a href="https://en.wikipedia.org/wiki/Solus_(operating_system)">en.wikipedia.org/wiki/Solus_(operating_system)</a>.</li>
+                <!-- HEYY btw for validation, any distrubutions that has a table, validate it, im done! ok? so far its zorin, solus, arch, pop, parrot. Keep this comment to know what ive done pre -->
+            </ul>
+            <h2>Enterprise Linux</h2>
+            <ul>
+                <li>&lsquo;Red Hat Enterprise Linux Operating System.&rsquo; Operating System, <a class="underline" href="http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">www.redhat.com/en/technologies/linux-platforms/enterprise-linux</a>.</li>
+                <li>Reock, Justin. &lsquo;Is Red Hat Enterprise Linux Open Source?&rsquo; OpenLogic by Perforce, 13 Dec. 2019, <a class="underline" href="http://www.openlogic.com/blog/red-hat-enterprise-linux-open-source">www.openlogic.com/blog/red-hat-enterprise-linux-open-source</a>.</li>
+                <li>Techopedia. &lsquo;What Is Red Hat Enterprise Linux (RHEL)? - Definition from Techopedia.&rsquo; Techopedia.com, Techopedia, 9 Feb. 2017, <a class="underline" href="http://www.techopedia.com/definition/15777/red-hat-enterprise-linux-rhel">www.techopedia.com/definition/15777/red-hat-enterprise-linux-rhel</a>.</li>
+                <li>Wikipedia Community. &lsquo;Red Hat Enterprise Linux.&rsquo; Wikipedia, Wikimedia Foundation, 23 Feb. 2022, <a class="underline" href="https://en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux">en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux</a>.</li>
+            </ul>
+            <h2>Oracle Linux</h2>
+            <ul>
+                <li>&lsquo;Oracle Linux.&rsquo; Distrowatch.com, 7 Feb. 2022, <a class="underline" href="https://distrowatch.com/table.php?distribution=oracle">distrowatch.com/table.php?distribution=oracle</a>.</li>
+                <li>Oracle. &lsquo;Oracle Linux.&rsquo; Linux Oracle Canada, <a class="underline" href="http://www.oracle.com/ca-en/linux/">www.oracle.com/ca-en/linux/</a>.</li>
+                <li>Popov, Rusi, et al. &lsquo;Oracle Linux Reviews, Competitors and Pricing.&rsquo; Unbiased Reviews from the Tech Community, 2 Aug. 2021, <a class="underline" href="http://www.peerspot.com/products/oracle-linux-reviews">www.peerspot.com/products/oracle-linux-reviews</a>.</li>
+                <li>Wikipedia Community. &lsquo;Oracle Linux.&rsquo; Wikipedia, Wikimedia Foundation, 25 Feb. 2022, <a class="underline" href="https://en.wikipedia.org/wiki/Oracle_Linux">en.wikipedia.org/wiki/Oracle_Linux</a>.</li>
+            </ul>
+            <h2>Fedora</h2>
+            <ul>
+                <li>Congleton, Nicholas. &lsquo;Is Fedora Linux Right for You?&rsquo; Lifewire, Lifewire, 16 Oct. 2021, <a class="underline" href="http://www.lifewire.com/what-is-fedora-linux-4175439">www.lifewire.com/what-is-fedora-linux-4175439</a>.</li>
+                <li>Fedora. &lsquo;Get Fedora.&rsquo; Fedora, <a class="underline" href="https://getfedora.org/">getfedora.org/</a>.</li>
+                <li>Wikipedia Community. &lsquo;Fedora Linux.&rsquo; Wikipedia, Wikimedia Foundation, 26 Feb. 2022, <a class="underline" href="https://en.wikipedia.org/wiki/Fedora_Linux">en.wikipedia.org/wiki/Fedora_Linux</a>.</li>
+            </ul>
+        </div>
+    </div>
+    </body>
+</html>

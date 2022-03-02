@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang = "en">
-<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +10,8 @@
         <!-- <link rel="stylesheet" href="css/rws.css"> -->
         <!-- was being buggy -->
         <link href="css/faq.css?version=3" rel="stylesheet" type="text/css">
-        <script src="javascript/main.mjs?version=1" defer type="module"></script>
-        <script src="javascript/dropdown.js?version=2" defer type="text/javascript"></script>
+        <script src="javascript/main.mjs?version=1" defer></script>
+        <script src="javascript/dropdown.js?version=2" defer></script>
     </head>
     <body>
         <div class="row">
@@ -25,7 +24,6 @@
                 </div>
             </div>
         </div>
-    </section>
     <section class="whitespace row">
         <div class="bow__container">
             <!-- <br><br><br><br><br><br> -->
@@ -36,9 +34,11 @@
     </section>
     <section class="hide">
         <div class="sidebar" id="side">
+            <menu>
             <li class="logo">
                 <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
             </li>
+            </menu>
             <div class="dropdown-heading">
                 <p class="drop__title"><u><strong>Debian</strong></u></p>
             </div>
@@ -66,11 +66,11 @@
                     <span class="zorin">Z</span>
                     <span class="link_text_hide" id="click4">Zorin OS</span>
                 </a>
-                <a href="distros/popos.html"">
+                <a href="distros/popos.html">
                     <img src="images/Pop_OS_logo.svg" alt="Pop Os" class="svg">
                     <span class="link_text_hide" id="click5">Pop!_OS</span>
                 </a>
-                <a href="distros/elementary.html"">
+                <a href="distros/elementary.html">
                     <img src="images/Elementary_OS_logo.svg" alt="Elementary" class="svg">
                     <span class="link_text_hide" id="click6">Elementary OS</span>
                 </a>
@@ -105,12 +105,12 @@
                 <p class="drop__title"><u><strong>Red Hat</strong></u></p>
             </div>
             <div class="dropdown__links">
-                <a href="#" class="minimized">
-                    <span>E</span>
+                <a href="distros/" class="minimized">
+                    <img src="../images/Red_Hat_logo.svg" alt="oracle" class="svg">
                     <span class="link_text_hide" id="click11">Enterprise Linux</span>
                 </a>
                 <a href="distros/oracle.html">
-                    <img src="images/Oracle_logo.svg" alt="oracle"class="svg">
+                    <img src="images/Oracle_logo.svg" alt="oracle" class="svg">
                     <span class="link_text_hide" id="click12">Ubuntu Budgie</span>
                 </a>
                 <a href="distros/fedora.html">
@@ -200,6 +200,7 @@
             </div>
         </div>
     </div>
+    <!-- where is redhat enterprise linux html -->
         <span class="Main"></span>
         <section>
             <div class="title-text">
@@ -239,7 +240,7 @@
                         <table>
                             <tr class="col-3 col-s-3">
                                 <th>
-                                    <h2 class="expand">Advantages of Linux</h2>
+                                    <span class="expand">Advantages of Linux</span>
                                 </th>
                             </tr>
                         </table>

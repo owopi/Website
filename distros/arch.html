@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,15 +9,255 @@
     <link href="../css/layout.css?6142" rel="stylesheet" type="text/css">
     <link href="../css/nav.css?4321" rel="stylesheet" type="text/css">
     <link href="../css/distros.css?312" rel="stylesheet" type="text/css">
-    <script src="../javascript/main.mjs?version=1" defer type="module"></script>
-    <script src="../javascript/dropdown.js?version=2" defer type="text/javascript"></script>
+    <script src="../javascript/main.mjs?version=1" defer></script>
+    <script src="../javascript/dropdown.js?version=2" defer></script>
 </head>
-    <body>
+<body>
+    <div class="navbardistro" >
+        <div class="container">
+            <div class="header">
+                <div class="separate hide">
+                    <a href="faq.html" class="navigation">Other Links</a>
+                    <a href="#RelLink1" class="navigation">QOL</a>
+                    <a href="#RelLink2" class="navigation">Benefits</a>
+                    <a href="#RelLink3" class="navigation">Advantages of Linux</a>
+                    <a href="../test3.html" class="navigation">Homepage</a>
+                </div>
+
+                <div class="navbarbg top hidenav">
+                    <div class="container">
+                        <div class="header">
+                            <div class="dropdown" data-dropdown>
+                                <button class="link" data-dropdown-button><i class="arrow down"></i>&nbsp;List of Distributions</button>
+                                <div class="menu distros">
+                                    <div class="scrollbar">
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Debian</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/parrot.html">Parrot OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Ubuntu</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/zorin.html">Zorin OS</a>
+                                            <a href="/mint.html">Linux Mint</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Arch</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/arch.html">Arch Linux</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Gentoo</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/gentoo.html">Gentoo OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Red Hat</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="#" class="minimized">Enterprise Linux</a>
+                                            <a href="/cent.html">Cent OS</a>
+                                            <a href="/fedora.html">Fedora</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong><span class="splitword">Other Cool</span> Distrubutions</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/mxlinux.html">MX Linux</a>
+                                            <a href="/popos.html">Pop OS</a>
+                                            <a href="/elementary.html">Elementary OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Homepage</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="faq.html">FAQ</a>
+                                            <a href="#RelLink1">What is linux?</a>
+                                            <a href="#RelLink2">What are Distrbutions?</a>
+                                            <a href="#RelLink3">Advantages of Linux</a>
+                                            <div class="whitespace"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="hide">
+        <div class="sidebar" id="side">
+            <li class="logo">
+                <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
+            </li>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Debian</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/parrot.html">
+                    <img src="../images/Parrot_OS_logo.svg" alt="P" class="svg">
+                    <span class="link_text_hide" id="click1">Parrot OS</span>
+                </a>
+                <a href="/distros/mxlinux.html">
+                    <img src="../images/MX_Linux_logo.svg" alt="MX" class="svg">
+                    <span class="link_text_hide" id="click2">MX linux</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Ubuntu</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/mint.html">
+                    <img src="../images/Linux_Mint_logo.svg" alt="Mint" class="svg">
+                    <span class="link_text_hide" id="click3">Linux Mint</span>
+                </a>
+                <a href="/distros/zorin.html">
+                    <!-- <img src="../images/Zorin_OS_logo.svg" alt="Z" class="svg"> -->
+                    <!-- <embed src="../images/Zorin_OS_logo.svg"/> -->
+                    <span class="zorin">Z</span>
+                    <span class="link_text_hide" id="click4">Zorin OS</span>
+                </a>
+                <a href="/distros/popos.html"">
+                    <img src="../images/Pop_OS_logo.svg" alt="Pop Os" class="svg">
+                    <span class="link_text_hide" id="click5">Pop!_OS</span>
+                </a>
+                <a href="/distros/elementary.html"">
+                    <img src="../images/Elementary_OS_logo.svg" alt="Elementary" class="svg">
+                    <span class="link_text_hide" id="click6">Elementary OS</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Arch</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/arch.html">
+                    <img src="../images/Arch_Linux_logo.svg" alt="Arch" class="svg">
+                    <span class="link_text_hide" id="click7">Arch Linux</span>
+                </a>
+                <a href="/distros/manjaro.html">
+                    <img src="../images/Manjaro_logo.svg" alt="Manjaro" class="svg">
+                    <span class="link_text_hide" id="click8">Manjaro OS</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Solus</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/solus.html">
+                    <img src="../images/Solus_OS_logo.svg" alt="Solus" class="svg">
+                    <span class="link_text_hide" id="click9">Solus OS</span>
+                </a>
+                <a href="/distros/bridge.html">
+                    <img src="../images/Ubuntu_Budgie_logo.svg" alt="Budgie" class="svg">
+                    <span class="link_text_hide" id="click10">Ubuntu Budgie</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Red Hat</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="#" class="minimized">
+                    <img src="../images/Red_Hat_logo.svg" alt="oracle"class="svg">
+                    <span class="link_text_hide" id="click11">Enterprise Linux</span>
+                </a>
+                <a href="/distros/oracle.html">
+                    <img src="../images/Oracle_logo.svg" alt="oracle"class="svg">
+                    <span class="link_text_hide" id="click12">Ubuntu Budgie</span>
+                </a>
+                <a href="/distros/fedora.html">
+                    <img src="../images/Fedora_logo.svg" alt="Fedora" class="svg">
+                    <span class="link_text_hide" id="click13">Fedora</span>
+                </a>
+            </div>
+            <div class="whitespace"></div>
+            <div class="whitespace"></div>
+        </div>
+    </section>
+    <span id="#RelLink3"></span>
         <div>
-            <header>
-                Arch Distributions?
-    
-            </header>
+            <div class="textCenter row">
+                <div class="">
+
+                    <div class="box__container">
+                        <table>
+                            <tr>
+                                <th>
+                                    <h2 class="expand">Advantages of Arch Linux</h2>
+                                </th>
+                            </tr>
+                        </table>
+                        <div class="max__width" id="#RelLink2">
+                            <table>
+                                <tr>
+                                    <td class="mimic"><h2 title="Linux distros are known for their simplicity and ease of use whilst not being exactly user-friendly, but Arch Linux takes a notch up and undoubtedly an exclusion.">Lightweight</h2></td>
+                                    <td title="This could be a headache for rookies, but the icing on the cake for advanced users.">Arch Linux is built from scratch from the Linux kernel and not Ubuntu or Debian, like most popular distributions. Arch Linux lets users customize everything while keeping the functionality untouched.</td>
+                                </tr>
+                                <tr>
+                                    <th>Complexity</th>
+                                    <td>The complexity of Arch Linux forces you to learn things you would’ve never thought of in other distributions. For example, <a href="https://wiki.archlinux.org/title/Network_configuration/Wireless">configuring the network</a> while installing Arch Linux is a good learning lesson as it’s an extremely long process.</td>
+                                </tr>
+                                <tr>
+                                    <td>Where to find guidance?</td>
+                                    <td>You aren’t alone in the dark as people have anticipated and prepared Arch Wiki is there for you! It is the most extensive community-managed Linux documentation that exists on the internet. </td>
+                                </tr>
+                                <tr>
+                                    <td>Customization extents?</td>
+                                    <td>Arch Linux takes a DIY approach to a Linux distrubution by giving you the power to customize every intricate detail yourself! This makes Arch Linux Lightweight and accesible as there are no bloatwares.</td>  
+                                </tr>
+                                <tr>
+                                    <td><span title="Obstacle">Disadvantages</span> for rookies?</td>
+                                    <td>It doesn't come with its own native <a href="https://wiki.archlinux.org/title/desktop_environment">desktop environment</a> or window manager, meaning that you’ll have to set it up yourself; however, this gives you many options to choose from.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="textCenter row">
+                    <div class="box__container">
+                        <table>
+                            <tr class="col-3 col-s-3">
+                                <th class="mimic">
+                                    <h2 class="expand">Benefits</h2>
+                                </th>
+                            </tr>
+                            <tr class="col-3 col-s-3">
+                                <td>
+                                    Summary: Lightweight, Complexity, Customization to your liking
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="textCenter row">
+        <h2 class="relevantLinks">Relevant links</h2>
+            <a href="https://archlinux.org/download/" title="click me to get a brief introduction">Introduction to <strong>Arch</strong> Linux</a>
+        <h2 class="relevantLinks">How up to date is arch? Click on the button below!</h2>
+            <a href="https://itsfoss.com/aur-arch-linux/" title="click me to go to AUR"><abbr>Aur?</abbr></a>
+        <button class="ani" onclick="appear()" id="ani">Want a summary? Click me!!</button>
+            <div class="text-box textCenter">
+                <div class="together">
+                    <p class="disappear">Arch Linux is a rolling release distribution, meaning that you get new kernel and application versions as soon as they are released.</p>
+                    <p class="disappear">Due to Arch Linux being so barebones compared to other distributions, it is swift to provide you with the latest kernel.</p>
+                    <p class="disappear">In comparison, most other Linux distributions serve you old Linux kernel versions because the whole OS is built on top of the old version. The same goes for software.</p>
+                    <p class="disappear">Because of the Arch User Repository (AUR), Arch Linux users get new software updates before other Linux users.</p>
+                </div>
+                <div class="appear" id="disappear">
+
+                </div>
+            </div>
         </div>
     </body>
-    </html>
+</html>

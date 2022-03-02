@@ -112,3 +112,78 @@ function toggle() {
             break;
     }
 }
+
+function appear() {
+    const classes = document.querySelectorAll("div.together > p");
+    const paragraph = document.querySelector(".appear");
+    const appearword = document.querySelector(".appearword");
+    const appear = document.querySelectorAll("div.textCenter > div.appear > p");
+    var words = [];
+    for(var i = 0; i < classes.length; i++) {
+            words.push(classes[i].textContent);
+        }
+        const booton = document.getElementById("ani");
+        booton.textContent = "Close content? Click me!";
+        if(appearword){
+            function remove_last() {
+                //join() returns an array as a string:
+                let base = words.join(" ");
+                //split() splits a string into an array of substrings, and returns the array:
+                let base_split = base.split(" ");
+                //this curly bracket is on purpose
+                {
+                    /* base_split.pop();
+                    let final_base = base_split.join(" ");
+                    console.log(final_base);
+                    paragraph.innerHTML = `<p class="appearword">${final_base}</p>` */
+                    let count = 0;
+                    let something = setInterval(() => {
+                        let span = paragraph.querySelectorAll('p')[count]
+                        span.classList.remove('appearword');
+                        count++;
+                            if(count === words.length) {
+                                clearInterval(something);
+                                something = undefined;
+                                return;
+                            }
+                        }, 200)
+
+                        setTimeout(function(){
+                            let list = document.getElementById("disappear");
+
+                            // As long as id#disappear has a child node, remove it
+                            while (list.hasChildNodes()) {  
+                              list.removeChild(list.firstChild);
+                            }
+                            booton.textContent = "Want a summary? Click me!!";
+                       }, 3000);
+                    };
+                }
+                remove_last()
+            }
+            /* setInterval(remove_last(), 40) */
+    else if(!appearword) {
+        words.forEach((item) => {
+            console.log(item)
+            paragraph.innerHTML += `<p>${item}</p>`
+            /* console.log(paragraph) */
+            return;
+        })
+        
+        
+        let count = 0;
+        let something = setInterval(() => {
+            let span = paragraph.querySelectorAll('p')[count]
+            span.classList.add('appearword');
+            count++;
+                if(count === words.length) {
+                    clearInterval(something);
+                    something = undefined;
+                    return;
+                }
+            }, 200)
+        }
+    else {
+        document.write("The text could not be run, try refreshing the page or revisting the page? You can report this error <a href=\"https://github.com/owopi/Website/issues\">here</a>.")
+    }
+}

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +9,248 @@
     <link href="../css/layout.css?6142" rel="stylesheet" type="text/css">
     <link href="../css/nav.css?4321" rel="stylesheet" type="text/css">
     <link href="../css/distros.css?312" rel="stylesheet" type="text/css">
-    <script src="../javascript/main.mjs?version=1" defer type="module"></script>
-    <script src="../javascript/dropdown.js?version=2" defer type="text/javascript"></script>
+    <script src="../javascript/main.mjs?version=1" defer></script>
+    <script src="../javascript/dropdown.js?version=2" defer></script>
 </head>
 <body>
+    <div class="navbardistro" >
+        <div class="container">
+            <div class="header">
+                <div class="separate hide">
+                    <a href="faq.html" class="navigation">Other Links</a>
+                    <a href="#RelLink1" class="navigation">QOL</a>
+                    <a href="#RelLink2" class="navigation">Benefits</a>
+                    <a href="#RelLink3" class="navigation">Advantages of Linux</a>
+                    <a href="../test3.html" class="navigation">Homepage</a>
+                </div>
+
+                <div class="navbarbg top hidenav" >
+                    <div class="container">
+                        <div class="header">
+                            <div class="dropdown" data-dropdown>
+                                <button class="link" data-dropdown-button><i class="arrow down"></i>&nbsp;List of Distributions</button>
+                                <div class="menu distros">
+                                    <div class="scrollbar">
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Debian</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/parrot.html">Parrot OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Ubuntu</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/zorin.html">Zorin OS</a>
+                                            <a href="/mint.html">Linux Mint</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Arch</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/arch.html">Arch Linux</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Gentoo</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/gentoo.html">Gentoo OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Red Hat</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="#" class="minimized">Enterprise Linux</a>
+                                            <a href="/cent.html">Cent OS</a>
+                                            <a href="/fedora.html">Fedora</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong><span class="splitword">Other Cool</span> Distrubutions</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="mxlinux.html">MX Linux</a>
+                                            <a href="/popos.html">Pop OS</a>
+                                            <a href="/elementary.html">Elementary OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><u><strong>Homepage</strong></u></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="faq.html">FAQ</a>
+                                            <a href="#RelLink1">What is linux?</a>
+                                            <a href="#RelLink2">What are Distrbutions?</a>
+                                            <a href="#RelLink3">Advantages of Linux</a>
+                                            <div class="whitespace"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="hide">
+        <div class="sidebar" id="side">
+            <menu>
+            <li class="logo">
+                <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
+            </li>
+            </menu>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Debian</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/parrot.html">
+                    <img src="../images/Parrot_OS_logo.svg" alt="P" class="svg">
+                    <span class="link_text_hide" id="click1">Parrot OS</span>
+                </a>
+                <a href="/distros/mxlinux.html">
+                    <img src="../images/MX_Linux_logo.svg" alt="MX" class="svg">
+                    <span class="link_text_hide" id="click2">MX linux</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Ubuntu</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/mint.html">
+                    <img src="../images/Linux_Mint_logo.svg" alt="Mint" class="svg">
+                    <span class="link_text_hide" id="click3">Linux Mint</span>
+                </a>
+                <a href="/distros/zorin.html">
+                    <!-- <img src="../images/Zorin_OS_logo.svg" alt="Z" class="svg"> -->
+                    <!-- <embed src="../images/Zorin_OS_logo.svg"/> -->
+                    <span class="zorin">Z</span>
+                    <span class="link_text_hide" id="click4">Zorin OS</span>
+                </a>
+                <a href="/distros/popos.html">
+                    <img src="../images/Pop_OS_logo.svg" alt="Pop Os" class="svg">
+                    <span class="link_text_hide" id="click5">Pop!_OS</span>
+                </a>
+                <a href="/distros/elementary.html">
+                    <img src="../images/Elementary_OS_logo.svg" alt="Elementary" class="svg">
+                    <span class="link_text_hide" id="click6">Elementary OS</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Arch</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/arch.html">
+                    <img src="../images/Arch_Linux_logo.svg" alt="Arch" class="svg">
+                    <span class="link_text_hide" id="click7">Arch Linux</span>
+                </a>
+                <a href="/distros/manjaro.html">
+                    <img src="../images/Manjaro_logo.svg" alt="Manjaro" class="svg">
+                    <span class="link_text_hide" id="click8">Manjaro OS</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Solus</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/solus.html">
+                    <img src="../images/Solus_OS_logo.svg" alt="Solus" class="svg">
+                    <span class="link_text_hide" id="click9">Solus OS</span>
+                </a>
+                <a href="/distros/bridge.html">
+                    <img src="../images/Ubuntu_Budgie_logo.svg" alt="Budgie" class="svg">
+                    <span class="link_text_hide" id="click10">Ubuntu Budgie</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><u><strong>Red Hat</strong></u></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="#" class="minimized">
+                    <img src="../images/Red_Hat_logo.svg" alt="oracle" class="svg">
+                    <span class="link_text_hide" id="click11">Enterprise Linux</span>
+                </a>
+                <a href="/distros/oracle.html">
+                    <img src="../images/Oracle_logo.svg" alt="oracle" class="svg">
+                    <span class="link_text_hide" id="click12">Ubuntu Budgie</span>
+                </a>
+                <a href="/distros/fedora.html">
+                    <img src="../images/Fedora_logo.svg" alt="Fedora" class="svg">
+                    <span class="link_text_hide" id="click13">Fedora</span>
+                </a>
+            </div>
+            <div class="whitespace"></div>
+            <div class="whitespace"></div>
+        </div>
+    </section>
     
+    <div>
+        <h2>Solus OS</h2>
+    </div>
+        <div class="textCenter row">
+            <div>
+                <div class="box__container">
+                    <table>
+                        <tr>
+                            <th>
+                                <h2 class="expand" title="We'll be diving into the difference and its features!">What is Solus OS?</h2>
+                            </th>
+                        </tr>
+                    </table>
+                    <div class="max__width" id="#RelLink2">
+                        <table>
+                            <tr>
+                                <th><h2>Solus OS</h2></th>
+                                <!-- h2 in the link for colours -->
+                                <td>It is similar to arch linux, being built from bottom to top! You get to build everything from scratch just like arch!</td>
+                            </tr>
+                            <tr>
+                                <td>So why solus and not arch?</td>
+                                <td>Solus OS focuses on aesthetics and user-friendly GUI, unlike Arch. There is no hassling with settings or choices, as almost everything is taken care of for you.</td>
+                            </tr>
+                            <tr>
+                                <td>Are there versions or updates?</td>
+                                <td>There are not! What are newer updates? Basically going from windows 10 to windows 11! What are newer versions? Ubuntu 18.04 to Ubuntu 20.04!</td>
+                            </tr>
+                            <tr>
+                                <td>If there aren't updates or version, How would we get the newest Solos OS?</td>
+                                <td>Solus OS is also a rolling release distribution, making it similar in functionality to Arch Linux. This is beneficial as you will only have to install Solus OS once and never update to a new version (for example, Windows 10 to 11). You will just have to update your software and Linux kernel version.</td>
+                            </tr>
+                            <tr>
+                                <td>Time shift?</td>
+                                <td> Of course, frequent software changes may potentially lead to an unstable system. However, you can use Timeshift for backup. </td>
+                            </tr>
+                            <tr>
+                                <td>Supported Desktop Environment?</td>
+                                <td>Solus OS comes in many flavors of desktop environments, including Budgie (made by Solus developers), GNOME, MATE, and Plasma, so you don't have to set them up yourself, again, unlike Arch Linux. </td>
+                            </tr>
+                            <tr>
+                                <td>User-friendlyness</td>
+                                <td>Windows and other Linux distro users will find using Solus OS familiar, <span title="They put in an effort!">as most GUI items are found in similar places</span>, with a few tweaks to make it more user-friendly.</td>
+                            </tr>
+                            <tr>
+                                <td><abbr title="For your information">FYI</abbr></td>
+                                <td>Moving your mouse over a category doesn’t immediately switch it like in other Linux distributions. Additionally, Solus Budgie has a nifty Windows-like menu on the side that can search installed applications on the left and a notification center, calendar, settings, and widgets to the right. </td>
+                            </tr>
+                            <tr>
+                                <td>Installation</td>
+                                <td>The installation process is effortless, similar to Linux Mint.</td>
+                            </tr>
+                            <tr>
+                                <td>Summary</td>
+                                <td>In conclusion, Solus OS is great for beginners and advanced users due to its inclusion of user-friendly features and the fact that it’s built from scratch, making it as customizable as Arch Linux but without the hassle.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="textCenter row">
+            <div class="box__container">
+                <h2>Relevant links</h2>
+                <a href="https://www.maketecheasier.com/solus-os-review/">https://www.maketecheasier.com/solus-os-review/</a>
+                <a href="https://medium.com/geekculture/solus-budgie-e461f7b90b40">https://medium.com/geekculture/solus-budgie-e461f7b90b40</a>
+                <a href="https://getsol.us/download/">https://getsol.us/download/</a>
+                <a href="https://en.wikipedia.org/wiki/Solus_(operating_system)">https://en.wikipedia.org/wiki/Solus_(operating_system)</a>
+            </div>
+        </div>
 </body>
 </html>

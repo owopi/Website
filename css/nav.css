@@ -145,6 +145,14 @@ that they form a hexagon */
     z-index: 2;
     top: 0;
 }
+.navbardistro {
+    box-sizing: border-box;
+    height: clamp(50px, 100%, 110px);
+    width: clamp(480px,100%,2560px);
+    background-color: #E54B4B;
+
+    position: relative;
+}
 .header {
     position: relative;
 }

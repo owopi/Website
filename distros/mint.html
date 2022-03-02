@@ -11,13 +11,237 @@
     <script src="../javascript/main.mjs?version=1" defer type="module"></script>
     <script src="../javascript/dropdown.js?version=2" defer type="text/javascript"></script>
 </head>
-    <body>
+<body>
+    <div class="navbardistro" >
+        <div class="container">
+            <div class="header">
+                <div class="separate hide">
+                    <a href="faq.html" class="navigation">Other Links</a>
+                    <a href="#RelLink1" class="navigation">QOL</a>
+                    <a href="#RelLink2" class="navigation">Benefits</a>
+                    <a href="#RelLink3" class="navigation">Advantages of Linux</a>
+                    <a href="../test3.html" class="navigation">Homepage</a>
+                </div>
 
-        <div>
-            <header>
-                Mint Linux Distributions and Versions?
-    
-            </header>
+                <div class="navbarbg top hidenav" >
+                    <div class="container">
+                        <div class="header">
+                            <div class="dropdown" data-dropdown>
+                                <button class="link" data-dropdown-button><i class="arrow down"></i>&nbsp;List of Distributions</button>
+                                <div class="menu distros">
+                                    <div class="scrollbar">
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><span class="underline"><strong>Debian</strong></span></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/parrot.html">Parrot OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><span class="underline"><strong>Ubuntu</strong></span></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/zorin.html">Zorin OS</a>
+                                            <a href="/mint.html">Linux Mint</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><span class="underline"><strong>Arch</strong></span></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/arch.html">Arch Linux</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><span class="underline"><strong>Gentoo</strong></span></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="/gentoo.html">Gentoo OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><span class="underline"><strong>Red Hat</strong></span></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="#" class="minimized">Enterprise Linux</a>
+                                            <a href="/cent.html">Cent OS</a>
+                                            <a href="/fedora.html">Fedora</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><span class="underline"><strong><span class="splitword">Other Cool</span> Distrubutions</strong></span></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="mxlinux.html">MX Linux</a>
+                                            <a href="/popos.html">Pop OS</a>
+                                            <a href="/elementary.html">Elementary OS</a>
+                                        </div>
+                                        <div class="dropdown-heading">
+                                            <p class="drop__title"><span class="underline"><strong>Homepage</strong></span></p>
+                                        </div>
+                                        <div class="dropdown__links">
+                                            <a href="faq.html">FAQ</a>
+                                            <a href="#RelLink1">What is linux?</a>
+                                            <a href="#RelLink2">What are Distrbutions?</a>
+                                            <a href="#RelLink3">Advantages of Linux</a>
+                                            <div class="whitespace"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="hide">
+        <div class="sidebar" id="side">
+            <li class="logo">
+                <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
+            </li>
+            <div class="dropdown-heading">
+                <p class="drop__title"><span class="underline"><strong>Debian</strong></span></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/parrot.html">
+                    <img src="../images/Parrot_OS_logo.svg" alt="P" class="svg">
+                    <span class="link_text_hide" id="click1">Parrot OS</span>
+                </a>
+                <a href="/distros/mxlinux.html">
+                    <img src="../images/MX_Linux_logo.svg" alt="MX" class="svg">
+                    <span class="link_text_hide" id="click2">MX linux</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><span class="underline"><strong>Ubuntu</strong></span></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/mint.html">
+                    <img src="../images/Linux_Mint_logo.svg" alt="Mint" class="svg">
+                    <span class="link_text_hide" id="click3">Linux Mint</span>
+                </a>
+                <a href="/distros/zorin.html">
+                    <!-- <img src="../images/Zorin_OS_logo.svg" alt="Z" class="svg"> -->
+                    <!-- <embed src="../images/Zorin_OS_logo.svg"/> -->
+                    <span class="zorin">Z</span>
+                    <span class="link_text_hide" id="click4">Zorin OS</span>
+                </a>
+                <a href="/distros/popos.html"">
+                    <img src="../images/Pop_OS_logo.svg" alt="Pop Os" class="svg">
+                    <span class="link_text_hide" id="click5">Pop!_OS</span>
+                </a>
+                <a href="/distros/elementary.html"">
+                    <img src="../images/Elementary_OS_logo.svg" alt="Elementary" class="svg">
+                    <span class="link_text_hide" id="click6">Elementary OS</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><span class="underline"><strong>Arch</strong></span></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/arch.html">
+                    <img src="../images/Arch_Linux_logo.svg" alt="Arch" class="svg">
+                    <span class="link_text_hide" id="click7">Arch Linux</span>
+                </a>
+                <a href="/distros/manjaro.html">
+                    <img src="../images/Manjaro_logo.svg" alt="Manjaro" class="svg">
+                    <span class="link_text_hide" id="click8">Manjaro OS</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><span class="underline"><strong>Solus</strong></span></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="/distros/solus.html">
+                    <img src="../images/Solus_OS_logo.svg" alt="Solus" class="svg">
+                    <span class="link_text_hide" id="click9">Solus OS</span>
+                </a>
+                <a href="/distros/bridge.html">
+                    <img src="../images/Ubuntu_Budgie_logo.svg" alt="Budgie" class="svg">
+                    <span class="link_text_hide" id="click10">Ubuntu Budgie</span>
+                </a>
+            </div>
+            <div class="dropdown-heading">
+                <p class="drop__title"><span class="underline"><strong>Red Hat</strong></span></p>
+            </div>
+            <div class="dropdown__links">
+                <a href="#" class="minimized">
+                    <span>E</span>
+                    <span class="link_text_hide" id="click11">Enterprise Linux</span>
+                </a>
+                <a href="/distros/oracle.html">
+                    <img src="../images/Oracle_logo.svg" alt="oracle"class="svg">
+                    <span class="link_text_hide" id="click12">Ubuntu Budgie</span>
+                </a>
+                <a href="/distros/fedora.html">
+                    <img src="../images/Fedora_logo.svg" alt="Fedora" class="svg">
+                    <span class="link_text_hide" id="click13">Fedora</span>
+                </a>
+            </div>
+            <div class="whitespace"></div>
+            <div class="whitespace"></div>
+        </div>
+    </section>
+
+    <div>
+        <h2>The better ubuntu?..</h2>
+    </div>
+        <div class="textCenter row">
+            <div>
+                <div class="box__container">
+                    <table>
+                        <tr>
+                            <th>
+                                <span title="We'll be diving into the difference and its features!">What is mint linux?</span>
+                            </th>
+                        </tr>
+                    </table>
+                    <div class="max__width" id="#RelLink2">
+                        <table>
+                            <tr>
+                                <th>Who started Linux Mint?</th>
+                                <!-- h2 in the link for colours -->
+                                <td><a href="https://www.linuxmint.com/about.php#:~:text=Articles%20%26%20reviews,website%20called%20%22Linux%20Mint%22."><h2>Clement Lefebvre</h2></a></td>
+                            </tr>
+                            <tr>
+                                <td>Why is Linux mint more popularized than ubuntu?</td>
+                                <td>Linux Mint is another Linux distribution based on Ubuntu; however, its quality of life features make it more popular than Ubuntu itself.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="box__container">
+                    <table>
+                        <tr>
+                            <th>Easy installation</th>
+                            <td>Linux Mint simplifies the installation process whether you are tech-savvy or a beginner. The setup GUI guides you through the installation process almost brainlessly. </td>
+                        </tr>
+                        <tr>
+                            <td>Arguably, The Best Software Manager</td>
+                            <td>The software manager on Linux Mint is the best I’ve personally seen! You have access to thousands of applications in a single store; no need to search the web! You can leave reviews and report bugs directly from the software manager, making it easy for new users to troubleshoot if the program isn’t working. Additionally, the software manager is quick, snappy and doesn’t freeze or become sluggish like the default Ubuntu Software Center.</td>
+                        </tr>
+                        <tr>
+                            <td>Tons of Pre-Installed Apps</td>
+                            <td>Linux Mint comes pre-installed with many useful apps similar to Windows, like a dedicated update manager to search for and install updates for the system and installed programs and the Timeshift application to back up/restore your system easily. Popular apps like Pidgin and GIMP are also pre-installed!</td>
+                        </tr>
+                        <tr>
+                            <td>Arguably, The Best Software Manager</td>
+                            <td>The official Ubuntu distribution gets security updates and bug fixes for 5 years after a version release. However, almost all other Ubuntu-based distributions like Kubuntu, Lubuntu or any other official flavours of Ubuntu will leave you with 3 years of updates. But, with Linux Mint, no matter whether you use Cinnamon desktop edition, MATE, or XFCE, you get 5-years of system updates.</td>
+                        </tr>
+                        <tr>
+                            <td>Ease of Use</td>
+                            <td>Just like Zorin OS, Linux Mint is easy to use for previous Windows users; in this case, ChromeOS too! Although it is not as easy to use as Zorin, it provides an experience for users willing to take on Linux, which Linux Mint is perfect for getting started. </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="textCenter row">
+            <div class="box__container">
+                <h2>Relevant links</h2>
+                    <a href="https://itsfoss.com/linux-mint-vs-ubuntu/" target="_blank">https://itsfoss.com/linux-mint-vs-ubuntu/</a>
+                    <a href="https://www.fossmint.com/reasons-to-use-linux-mint/" target="_blank">https://www.fossmint.com/reasons-to-use-linux-mint/</a>
+                    <a href="https://www.ndimensionz.com/2019/10/18/top-advantages-of-linux-mint-reasons-why-to-try-it/" target="_blank">https://www.ndimensionz.com/2019/10/18/top-advantages-of-linux-mint-reasons-why-to-try-it/</a>
+                    <a href="https://www.makeuseof.com/tag/reasons-to-love-linux-mint/" target="_blank">https://www.makeuseof.com/tag/reasons-to-love-linux-mint/</a>
+                    <a href="https://www.linuxmint.com/about.php" target="_blank">https://www.linuxmint.com/about.php</a>
+            </div>
         </div>
     </body>
-    </html>
+</html>
