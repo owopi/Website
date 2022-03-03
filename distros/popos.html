@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,19 +9,20 @@
     <link href="../css/layout.css?6142" rel="stylesheet" type="text/css">
     <link href="../css/nav.css?4321" rel="stylesheet" type="text/css">
     <link href="../css/distros.css?312" rel="stylesheet" type="text/css">
-    <script src="../javascript/main.mjs?version=1" defer type="module"></script>
-    <script src="../javascript/dropdown.js?version=2" defer type="text/javascript"></script>
+    <script src="../javascript/main.mjs?version=1" defer></script>
+    <script src="../javascript/dropdown.js?version=2" defer></script>
 </head>
 <body>
     <div class="navbardistro" >
         <div class="container">
             <div class="header">
                 <div class="separate hide">
-                    <a href="faq.html" class="navigation">Other Links</a>
-                    <a href="#RelLink1" class="navigation">QOL</a>
-                    <a href="#RelLink2" class="navigation">Benefits</a>
-                    <a href="#RelLink3" class="navigation">Advantages of Linux</a>
-                    <a href="../test3.html" class="navigation">Homepage</a>
+                    <a href="../faq.html" class="navigation">Faq</a>
+                    <a href="sources.html">Sources</a>
+                    <a href="#RelLink1" class="navigation">Introduction</a>
+                    <a href="#RelLink2" class="navigation">Pop Os specialty</a>
+                    <a href="#RelLink3" class="navigation">Other Features</a>
+                    <a href="../index.html" class="navigation">Homepage</a>
                 </div>
 
                 <div class="navbarbg top hidenav" >
@@ -76,6 +78,7 @@
                                         </div>
                                         <div class="dropdown__links">
                                             <a href="faq.html">FAQ</a>
+                                            <a href="sources.html">Sources</a>
                                             <a href="#RelLink1">What is linux?</a>
                                             <a href="#RelLink2">What are Distrbutions?</a>
                                             <a href="#RelLink3">Advantages of Linux</a>
@@ -90,11 +93,13 @@
             </div>
         </div>
     </div>
-    <section class="hide">
+    <div class="hide">
         <div class="sidebar" id="side">
-            <li class="logo">
-                <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
-            </li>
+            <menu>
+                <li class="logo">
+                    <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
+                </li>
+            </menu>
             <div class="dropdown-heading">
                 <p class="drop__title"><u><strong>Debian</strong></u></p>
             </div>
@@ -122,11 +127,11 @@
                     <span class="zorin">Z</span>
                     <span class="link_text_hide" id="click4">Zorin OS</span>
                 </a>
-                <a href="/distros/popos.html"">
+                <a href="/distros/popos.html">
                     <img src="../images/Pop_OS_logo.svg" alt="Pop Os" class="svg">
                     <span class="link_text_hide" id="click5">Pop!_OS</span>
                 </a>
-                <a href="/distros/elementary.html"">
+                <a href="/distros/elementary.html">
                     <img src="../images/Elementary_OS_logo.svg" alt="Elementary" class="svg">
                     <span class="link_text_hide" id="click6">Elementary OS</span>
                 </a>
@@ -162,11 +167,11 @@
             </div>
             <div class="dropdown__links">
                 <a href="#" class="minimized">
-                    <img src="../images/Red_Hat_logo.svg" alt="oracle"class="svg">
+                    <img src="../images/Red_Hat_logo.svg" alt="oracle" class="svg">
                     <span class="link_text_hide" id="click11">Enterprise Linux</span>
                 </a>
                 <a href="/distros/oracle.html">
-                    <img src="../images/Oracle_logo.svg" alt="oracle"class="svg">
+                    <img src="../images/Oracle_logo.svg" alt="oracle" class="svg">
                     <span class="link_text_hide" id="click12">Ubuntu Budgie</span>
                 </a>
                 <a href="/distros/fedora.html">
@@ -177,7 +182,11 @@
             <div class="whitespace"></div>
             <div class="whitespace"></div>
         </div>
-    </section>   
+    </div>   
+    <div>
+        <h1 class="textCenter row">Pop!_OS</h1>
+        <h2 class="textCenter row">It Really Pops!</h2>
+    </div>
 
         <div class="textCenter row">
             <div>
@@ -185,28 +194,27 @@
                     <table>
                         <tr>
                             <th>
-                                <h2 class="expand" title="We'll be diving into the difference and its features!">What is POP OS?</h2>
+                                <p class="expand" title="We'll be diving into the difference and its features!">What is POP OS?</p>
                             </th>
                         </tr>
                     </table>
                     <div class="max__width" id="#RelLink2">
                         <table>
                             <tr>
-                                <th><h2>Pop OS</h2></th>
-                                <!-- h2 in the link for colours -->
+                                <th><p>Pop OS</p></th>
                                 <td>Pop!_ OS is another free and open-source Linux distribution based on Ubuntu.</td>
                             </tr>
                             <tr>
-                                <td>What does it get if it is based on Ubuntu?</td>
-                                <td>It uses <a href="https://en.wikipedia.org/wiki/APT_(software)" class="underline">apt</a> to update, install, get repositories and packages! It can also use <a href="https://en.wikipedia.org/wiki/Dpkg" class="underline">dpkg</a> to open deb files!  Pop!_OS features a customized <span title="Ubuntu 17.01 onwards uses a gnome shell!">GNOME</span> Shell interface, with a Pop!_OS theme.</td>
+                                <td>Based on Ubuntu</td>
+                                <td>It uses <a class="underline" href="https://en.wikipedia.org/wiki/APT_(software)" class="underline">apt</a> to update, install, get repositories and packages! It can also use <a class="underline" href="https://en.wikipedia.org/wiki/Dpkg" class="underline">dpkg</a> to open deb files!  Pop!_OS features a customized <span title="Ubuntu 17.01 onwards uses a gnome shell!">GNOME</span> Shell interface, with a Pop!_OS theme.</td>
                             </tr>
                             <tr>
-                                <td>Tailored made desktop environment!</td>
+                                <td>Tailored made Desktop Environment!</td>
                                 <td>Pop!_OS features a custom desktop environment known as COSMIC, based on GNOME.</td>
                             </tr>
                             <tr>
                                 <td>Similarities</td>
-                                <td>Pop!_OS has a similar layout to macOS and Ubuntu, making switching between them effortless. </td>
+                                <td>Pop!_OS has a similar layout to macOS and Ubuntu, making switching between them effortless.</td>
                             </tr>
                         </table>
                     </div>
@@ -219,17 +227,16 @@
                     <table>
                         <tr>
                             <th>
-                                <h2 class="expand" title="We'll be diving into the difference and its features!">What makes POP os shine?</h2>
+                                <p class="expand" title="We'll be diving into the difference and its features!">What Makes Pop!_OS Shine?</p>
                             </th>
                         </tr>
                     </table>
-                    <div class="max__width" id="#RelLink2">
                         <table>
                             <tr>
                                 <th><span title="expand">At first, Pop!_OS may seem like the average Ubuntu-based distribution, however, assuming so would be wrong.</span></th>
                             </tr>
                             <tr>
-                                <th><span title="expand"> Pop!_OS offers lots of distinct productivity features. One of the most popular features is “auto-tiling,”!</span></th>
+                                <th><span title="expand"> Pop!_OS offers lots of distinct productivity features. One of the most popular features is &ldquo;auto-tiling&rdquo;!</span></th>
                             </tr>
                             <tr>
                                 <td><span title="expand">This rearranges windows into tiles and gives you a bunch of keyboard shortcuts to navigate them. </span></td>
@@ -247,15 +254,14 @@
                                 <td><span title="expand">Pop!_OS also has a bunch of trackpad gestures built-in to make navigation almost as fast as a mouse on laptops.</span></td>
                             </tr>
                         </table>
-                    </div>
                 </div>
             </div>
         </div>
         <div class="textCenter row">
             <div class="box__container">
-                <h2>Relevant links</h2>
-                <a href="https://www.howtogeek.com/757260/what-is-pop-os/">https://www.howtogeek.com/757260/what-is-pop-os/</a>
-                <a href="https://distrowatch.com/table.php?distribution=popos">https://distrowatch.com/table.php?distribution=popos</a>
+                <h2>Relevant Links</h2>
+                <p><a class="underline" href="https://www.howtogeek.com/757260/what-is-pop-os/">https://www.howtogeek.com/757260/what-is-pop-os/</a></p>
+                <p><a class="underline" href="https://distrowatch.com/table.php?distribution=popos">https://distrowatch.com/table.php?distribution=popos</a></p>
             </div>
         </div>
 </body>

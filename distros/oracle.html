@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,19 +9,19 @@
     <link href="../css/layout.css?6142" rel="stylesheet" type="text/css">
     <link href="../css/nav.css?4321" rel="stylesheet" type="text/css">
     <link href="../css/distros.css?312" rel="stylesheet" type="text/css">
-    <script src="../javascript/main.mjs?version=1" defer type="module"></script>
-    <script src="../javascript/dropdown.js?version=2" defer type="text/javascript"></script>
+    <script src="../javascript/main.mjs?version=1" defer></script>
+    <script src="../javascript/dropdown.js?version=2" defer></script>
 </head>
     <body>
         <div class="navbardistro" >
             <div class="container">
                 <div class="header">
                     <div class="separate hide">
-                        <a href="faq.html" class="navigation">Other Links</a>
+                        <a href="../faq.html" class="navigation">Faq</a>
                         <a href="#RelLink1" class="navigation">QOL</a>
                         <a href="#RelLink2" class="navigation">Benefits</a>
                         <a href="#RelLink3" class="navigation">Advantages of Linux</a>
-                        <a href="../test3.html" class="navigation">Homepage</a>
+                        <a href="../index.html" class="navigation">Homepage</a>
                     </div>
     
                     <div class="navbarbg top hidenav" >
@@ -76,7 +77,8 @@
                                             </div>
                                             <div class="dropdown__links">
                                                 <a href="faq.html">FAQ</a>
-                                                <a href="#RelLink1">What is linux?</a>
+                                            <a href="sources.html">Sources</a>
+                                            <a href="#RelLink1">What is linux?</a>
                                                 <a href="#RelLink2">What are Distrbutions?</a>
                                                 <a href="#RelLink3">Advantages of Linux</a>
                                                 <div class="whitespace"></div>
@@ -90,11 +92,13 @@
                 </div>
             </div>
         </div>
-        <section class="hide">
+        <div class="hide">
             <div class="sidebar" id="side">
-                <li class="logo">
-                    <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
-                </li>
+                <menu>
+                    <li class="logo">
+                        <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
+                    </li>
+                </menu>
                 <div class="dropdown-heading">
                     <p class="drop__title"><u><strong>Debian</strong></u></p>
                 </div>
@@ -122,11 +126,11 @@
                         <span class="zorin">Z</span>
                         <span class="link_text_hide" id="click4">Zorin OS</span>
                     </a>
-                    <a href="/distros/popos.html"">
+                    <a href="/distros/popos.html">
                         <img src="../images/Pop_OS_logo.svg" alt="Pop Os" class="svg">
                         <span class="link_text_hide" id="click5">Pop!_OS</span>
                     </a>
-                    <a href="/distros/elementary.html"">
+                    <a href="/distros/elementary.html">
                         <img src="../images/Elementary_OS_logo.svg" alt="Elementary" class="svg">
                         <span class="link_text_hide" id="click6">Elementary OS</span>
                     </a>
@@ -162,11 +166,11 @@
                 </div>
                 <div class="dropdown__links">
                     <a href="#" class="minimized">
-                        <img src="../images/Red_Hat_logo.svg" alt="oracle"class="svg">
+                        <img src="../images/Red_Hat_logo.svg" alt="oracle" class="svg">
                         <span class="link_text_hide" id="click11">Enterprise Linux</span>
                     </a>
                     <a href="/distros/oracle.html">
-                        <img src="../images/Oracle_logo.svg" alt="oracle"class="svg">
+                        <img src="../images/Oracle_logo.svg" alt="oracle" class="svg">
                         <span class="link_text_hide" id="click12">Ubuntu Budgie</span>
                     </a>
                     <a href="/distros/fedora.html">
@@ -177,10 +181,11 @@
                 <div class="whitespace"></div>
                 <div class="whitespace"></div>
             </div>
-        </section>
+        </div>
 
         <div>
-            <h2>Solus OS</h2>
+            <h1 class="textCenter row">They Make Linux too?</h1>
+            <h2 class="textCenter row">Linux from the Creators of Java</h2>
         </div>
             <div class="textCenter row">
                 <div>
@@ -188,14 +193,14 @@
                         <table>
                             <tr>
                                 <th>
-                                    <h2 class="expand" title="We'll be diving into the difference and its features!">What is Oracle Linux?</h2>
+                                    <p class="expand" title="We'll be diving into the difference and its features!">What is Oracle Linux?</p>
                                 </th>
                             </tr>
                         </table>
                         <div class="max__width" id="#RelLink2">
                             <table>
                                 <tr>
-                                    <th><h2>Oracle OS</h2></th>
+                                    <th>Oracle OS</th>
                                     <td>Oracle Linux is an alternative to <abbr title="redhat enterprise linux">RHEL</abbr> that is open source and free to distribute and use commercially. </td>
                                 </tr>
                                 <tr>
@@ -225,11 +230,11 @@
             </div>
             <div class="textCenter row">
                 <div class="box__container">
-                    <h2>Relevant links</h2>
-                    <a href="https://distrowatch.com/table.php?distribution=oracle">https://distrowatch.com/table.php?distribution=oracle</a>
-                    <a href="https://www.peerspot.com/products/oracle-linux-reviews">https://www.peerspot.com/products/oracle-linux-reviews</a>
-                    <a href="https://www.oracle.com/ca-en/linux/">https://www.oracle.com/ca-en/linux/</a>
-                    <a href="https://en.wikipedia.org/wiki/Oracle_Linux">https://en.wikipedia.org/wiki/Oracle_Linux</a>
+                    <h2>Relevant Links</h2>
+                    <p><a class="underline" href="https://distrowatch.com/table.php?distribution=oracle">https://distrowatch.com/table.php?distribution=oracle</a></p>
+                    <p><a class="underline" href="https://www.peerspot.com/products/oracle-linux-reviews">https://www.peerspot.com/products/oracle-linux-reviews</a></p>
+                    <p><a class="underline" href="https://www.oracle.com/ca-en/linux/">https://www.oracle.com/ca-en/linux/</a></p>
+                    <p><a class="underline" href="https://en.wikipedia.org/wiki/Oracle_Linux">https://en.wikipedia.org/wiki/Oracle_Linux</a></p>
                 </div>
             </div>
     </body>

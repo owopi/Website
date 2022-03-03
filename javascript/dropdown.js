@@ -23,6 +23,7 @@
         console.log("Clicked");
         currentDropdown = e.target.closest('[data-dropdown1]');
         currentDropdown.classList.toggle('active');
+        console.log("BUtton 2");
     }
     document.querySelectorAll("[data-dropdown1].active").forEach(dropdown => {
         if(dropdown === currentDropdown) return;
@@ -73,9 +74,11 @@ var controller = true;
 function toggle() {
     console.log(controller);
     /* get all elements whose id starts with click so click1, click2 etc.*/
-    let test = document.querySelectorAll('*[id^="click"]')
+    let test = document.querySelectorAll('*[id^="click"]');
     /* if we want just the first id that starts with click just remove all in querySelectorAll */
-    let sidebar = document.querySelectorAll('*[id^="side"]')
+    let sidebar = document.querySelectorAll('*[id^="side"]');
+    let logo = document.querySelector('.logo > .link');
+ 
     var list = Array.from(test);
     var side = Array.from(sidebar);
     console.log(list);
@@ -91,6 +94,7 @@ function toggle() {
                 console.log(test)
                 test.classList.add('sidebar_show');
             });
+            logo.classList.add('link_expand');
             console.log("False is activated");
             console.log(controller);
             break;
@@ -104,6 +108,7 @@ function toggle() {
                 console.log(test)
                 test.classList.remove('sidebar_show');
             });
+            logo.classList.remove('link_expand');
             console.log("True is activated");
             console.log(controller);
             break;

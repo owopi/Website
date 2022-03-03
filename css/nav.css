@@ -40,13 +40,29 @@ a:active {
     color: #B83952;
     cursor: pointer;
     padding: 0;
-    left: 1.3rem;
+    left: .5rem;
     z-index: 2;
-    font-size: .8em;
+    font-size: .7em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 50px;
+    width: 100px;
 }
-
+.link_expand {
+    font-size: 1.2rem;
+    width: 150px;
+}
+.linking {
+    border: none;
+    position: fixed;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    width: 300px;
+    font-size: .5em;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://png.pngtree.com/background/20210714/original/pngtree-purple-and-blue-nebula-galaxy-background-picture-image_1205456.jpg");
+}
 .dropdown {
     position: relative;
     /* display: grid; */
@@ -58,11 +74,11 @@ a:active {
     position: absolute;
     left: 0;
     /* This makes the dropdown sit below nav bar */
-    top: calc(100% + 1.3rem);
+    top: calc(-100% + 1.1rem);
     /* This makes the dropdown sit below the text */
     /* top: calc(100% + .25rem); */
     background-color: #EDEEC0;
-    padding: .25rem;
+    padding: 0;
     /* Bends the borders */
     border-radius: .25rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
@@ -78,6 +94,8 @@ a:active {
     display: flex;
     align-items: center;
     justify-content: center;
+    left: 35%;
+    width: 500px;
 }   
 .zorin {
     color: #F2A6A6;
@@ -87,7 +105,7 @@ a:active {
     width: 20px;
     height: 20px;
 }
-  
+
 /* Align them in such a way
 that they form a hexagon */
 .zorin:before {
@@ -96,11 +114,11 @@ that they form a hexagon */
 .zorin:after {
     transform: rotate(-60deg);
 }
-.dropdown.active > .link,.link:hover{
+.dropdown.active > .linking,.linking:hover{
     /* changes colors */
     color: #CE5F75;
 }
-.dropdown.active > .link + .menu{
+.dropdown.active > .linking + .menu{
     /* makes it visible */
     opacity: 1;
     /* moves to original position */
@@ -210,6 +228,13 @@ that they form a hexagon */
     }
     
 } */
+@media only screen and (max-width: 425px) {
+    .container {
+    background-image: url("https://i0.wp.com/itsfoss.com/wp-content/uploads/2016/03/Linux-wallpapers-Cheat-sheets.jpg?ssl=1");
+    height: min-content;
+    }
+}
+
 
 @media only screen and (min-width: 425px) {
     .navigation {
@@ -409,6 +434,12 @@ that they form a hexagon */
     }
     .navigation {
         font-size: 1.5rem;
+    }
+    .scrollbar {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 220px;
+        width: 400px;
     }
 }
 

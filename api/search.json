@@ -88,5 +88,15 @@
         "Question?": "10",
         "Keyword": "?DOS",
         "Usage": "Difference between bash and dos"
+    },
+    {
+        "id": "17WTC",
+        "Header": "",
+        "Description_Content": "",
+        "Source": "https://www.guru99.com/linux-interview-questions-answers.html",
+        "Date of source": "29 December 2021",
+        "Question?": "11",
+        "Keyword": "?Unk",
+        "Usage": ""
     }
 ]

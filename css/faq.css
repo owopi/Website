@@ -103,3 +103,9 @@ input {
 #homelink2 {
     text-shadow: 2px 2px #FFF;
 }
+
+.sidebar_show > menu > li > link {
+    width: 110%;
+    font-size: 110%;
+}
+

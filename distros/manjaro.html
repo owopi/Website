@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,19 +9,19 @@
     <link href="../css/layout.css?6142" rel="stylesheet" type="text/css">
     <link href="../css/nav.css?4321" rel="stylesheet" type="text/css">
     <link href="../css/distros.css?312" rel="stylesheet" type="text/css">
-    <script src="../javascript/main.mjs?version=1" defer type="module"></script>
-    <script src="../javascript/dropdown.js?version=2" defer type="text/javascript"></script>
+    <script src="../javascript/main.mjs?version=1" defer></script>
+    <script src="../javascript/dropdown.js?version=2" defer></script>
 </head>
 <body>
     <div class="navbardistro" >
         <div class="container">
             <div class="header">
                 <div class="separate hide">
-                    <a href="faq.html" class="navigation">Other Links</a>
+                    <a href="../faq.html" class="navigation">Faq</a>
                     <a href="#RelLink1" class="navigation">QOL</a>
                     <a href="#RelLink2" class="navigation">Benefits</a>
                     <a href="#RelLink3" class="navigation">Advantages of Linux</a>
-                    <a href="../test3.html" class="navigation">Homepage</a>
+                    <a href="../index.html" class="navigation">Homepage</a>
                 </div>
 
                 <div class="navbarbg top hidenav" >
@@ -76,6 +77,7 @@
                                         </div>
                                         <div class="dropdown__links">
                                             <a href="faq.html">FAQ</a>
+                                            <a href="sources.html">Sources</a>
                                             <a href="#RelLink1">What is linux?</a>
                                             <a href="#RelLink2">What are Distrbutions?</a>
                                             <a href="#RelLink3">Advantages of Linux</a>
@@ -90,11 +92,13 @@
             </div>
         </div>
     </div>
-    <section class="hide">
+    <div class="hide">
         <div class="sidebar" id="side">
-            <li class="logo">
-                <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
-            </li>
+            <menu>
+                <li class="logo">
+                    <button class="link" onclick="toggle()">&nbsp;List of Distributions</button>
+                </li>
+            </menu>
             <div class="dropdown-heading">
                 <p class="drop__title"><u><strong>Debian</strong></u></p>
             </div>
@@ -122,11 +126,11 @@
                     <span class="zorin">Z</span>
                     <span class="link_text_hide" id="click4">Zorin OS</span>
                 </a>
-                <a href="/distros/popos.html"">
+                <a href="/distros/popos.html">
                     <img src="../images/Pop_OS_logo.svg" alt="Pop Os" class="svg">
                     <span class="link_text_hide" id="click5">Pop!_OS</span>
                 </a>
-                <a href="/distros/elementary.html"">
+                <a href="/distros/elementary.html">
                     <img src="../images/Elementary_OS_logo.svg" alt="Elementary" class="svg">
                     <span class="link_text_hide" id="click6">Elementary OS</span>
                 </a>
@@ -162,11 +166,11 @@
             </div>
             <div class="dropdown__links">
                 <a href="#" class="minimized">
-                    <img src="../images/Red_Hat_logo.svg" alt="oracle"class="svg">
+                    <img src="../images/Red_Hat_logo.svg" alt="oracle" class="svg">
                     <span class="link_text_hide" id="click11">Enterprise Linux</span>
                 </a>
                 <a href="/distros/oracle.html">
-                    <img src="../images/Oracle_logo.svg" alt="oracle"class="svg">
+                    <img src="../images/Oracle_logo.svg" alt="oracle" class="svg">
                     <span class="link_text_hide" id="click12">Ubuntu Budgie</span>
                 </a>
                 <a href="/distros/fedora.html">
@@ -177,10 +181,11 @@
             <div class="whitespace"></div>
             <div class="whitespace"></div>
         </div>
-    </section>   
+    </div>   
 
     <div>
-        <h2>The better ubuntu?..</h2>
+        <h1 class="textCenter row">The Better Arch?</h1>
+        <h2 class="textCenter row">Manjaro</h2>
     </div>
         <div class="textCenter row">
             <div>
@@ -188,13 +193,12 @@
                     <div class="max__width" id="#RelLink2">
                         <table>
                             <tr>
-                                <th>What is Manjoro linux</th>
-                                <!-- h2 in the link for colours -->
+                                <th>What is Manjoro Linux?</th>
                                 <td>Manjaro is a free and open-source Linux distribution based on Arch Linux. Manjaro is everything Arch Linux has to offer, but even more.</td>
                             </tr>
                             <tr>
-                                <td>Why is Manjoro more popularized or better than arch?</td>
-                                <td>Unlike Arch, Manjaro has a beautiful GUI and straightforward setup, with all the benefits of Arch Linux included! </td>
+                                <td>Why is Manjoro more popularized or better than Arch?</td>
+                                <td>Unlike Arch, Manjaro has a beautiful GUI and straightforward setup, with all the benefits of Arch Linux included!</td>
                             </tr>
                         </table>
                     </div>
@@ -204,10 +208,10 @@
                     <table>
                         <tr>
                             <th>Driver Installation</th>
-                            <td>In Arch Linux you would go into the command line interface to install using <span title="To install grub it would be ’pacman -S grub’.">pacman</span> &#8668;Example: Hover over. If you hovered over you would see it is already complicated however there is more.</td>
+                            <td>In Arch Linux you would go into the command line interface to install using <span title="To install grub it would be &rsquo;pacman -S grub&rsquo;.">pacman</span> &#8668;Example: Hover over. If you hovered over you would see it is already complicated however there is more.</td>
                         </tr>
                         <tr>
-                            <td>Driver Installation v2</td>
+                            <td>Driver Installation V2</td>
                             <td>To install drivers in Arch, you would first manually look for it, find the driver version to install and install it. However in manjaro  it scans the system and installs the required drivers automatically, just like ubuntu!</td>
                         </tr>
                         <tr>
@@ -215,12 +219,16 @@
                             <td>Not to forget, you still have access to the AUR, giving you access to the latest and greatest software updates and bug fixes.</td>
                         </tr>
                         <tr>
-                            <td>Arguably, The Best Software Manager</td>
-                            <td>The official Ubuntu distribution gets security updates and bug fixes for 5 years after a version release. However, almost all other Ubuntu-based distributions like Kubuntu, Lubuntu or any other official flavours of Ubuntu will leave you with 3 years of updates. But, with Linux Mint, no matter whether you use Cinnamon desktop edition, MATE, or XFCE, you get 5-years of system updates.</td>
+                            <td>Debian Application Files</td>
+                            <td>Typically for arch you are not able to run .deb (debian) file format however Manjaro also supports .deb (Debian) application files by modifying them to be compatible with AUR.</td>
                         </tr>
                         <tr>
-                            <td>Ease of Use</td>
-                            <td>Just like Zorin OS, Linux Mint is easy to use for previous Windows users; in this case, ChromeOS too! Although it is not as easy to use as Zorin, it provides an experience for users willing to take on Linux, which Linux Mint is perfect for getting started. </td>
+                            <td>User-Friendly</td>
+                            <td>Manjaro also fixes one of the primary issues Arch users encounter. Due to Arch having a rolling release system, new update packages may break the system. The Manjaro team avoids this by testing new packages before making them available to users. </td>
+                        </tr>
+                        <tr>
+                            <td>Community</td>
+                            <td>Lastly, Manjaro boasts a friendly community for beginner Linux users, with an official forum in over 29 languages</td>
                         </tr>
                     </table>
                 </div>
@@ -228,12 +236,10 @@
         </div>
         <div class="textCenter row">
             <div class="box__container">
-                <h2>Relevant links</h2>
-                    <a href="https://itsfoss.com/linux-mint-vs-ubuntu/" target="_blank">https://itsfoss.com/linux-mint-vs-ubuntu/</a>
-                    <a href="https://www.fossmint.com/reasons-to-use-linux-mint/" target="_blank">https://www.fossmint.com/reasons-to-use-linux-mint/</a>
-                    <a href="https://www.ndimensionz.com/2019/10/18/top-advantages-of-linux-mint-reasons-why-to-try-it/" target="_blank">https://www.ndimensionz.com/2019/10/18/top-advantages-of-linux-mint-reasons-why-to-try-it/</a>
-                    <a href="https://www.makeuseof.com/tag/reasons-to-love-linux-mint/" target="_blank">https://www.makeuseof.com/tag/reasons-to-love-linux-mint/</a>
-                    <a href="https://www.linuxmint.com/about.php" target="_blank">https://www.linuxmint.com/about.php</a>
+                <h2>Relevant Links</h2>
+                <p><a class="underline" href="https://manjaro.org/what-is-manjaro/">https://manjaro.org/what-is-manjaro/</a></p>
+                <p><a class="underline" href="https://itsfoss.com/why-use-manjaro-linux/">https://itsfoss.com/why-use-manjaro-linux/</a></p>
             </div>
+        </div>
 </body>
 </html>
