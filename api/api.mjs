@@ -2,7 +2,7 @@ const userCardTemplate = document.querySelector("[data-user-template]")
 const userCardContainer = document.querySelector("[data-user-container]")
 
 /* Api to get the faq */
-fetch("/search.json")
+fetch("https://vlxtiykg.github.io/Api-for-page/api/search.json")
     .then(response => response.json())
     .then( data => {
         search = data.map(faq => {
