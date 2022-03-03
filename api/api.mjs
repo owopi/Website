@@ -31,7 +31,7 @@ let search = [];
 inputBar.addEventListener("input", e => {
     const value = e.target.value.toLowerCase()
     search.forEach(verification => {
-            const isVisible = verification.question.toLowerCase().includes(value) ||  verification.description.toLowerCase().includes(value)
+            const isVisible = verification.question.includes(value) ||  verification.description.includes(value)
         /* If search bar contains a certain keyword and isVisible is true it does not hide card */
         verification.element.classList.toggle("hide", !isVisible)
     })
