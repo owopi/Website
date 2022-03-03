@@ -24,18 +24,9 @@ fetch("https://vlxtiykg.github.io/Api-for-page/api/search.json")
     })
 
     /* Search bar */
-
+let f_a_q = [];
 const inputBar = document.getElementById("search")
 
-let search = [];
-inputBar.addEventListener("input", e => {
-    const value = e.target.value.toLowerCase()
-    search.forEach(verification => {
-            const isVisible = verification.question.includes(value) ||  verification.description.includes(value)
-        /* If search bar contains a certain keyword and isVisible is true it does not hide card */
-        verification.element.classList.toggle("hide", !isVisible)
-    })
-})
 
 document.addEventListener("click", e => {
     console.log(e.target)
