@@ -25,7 +25,7 @@ fetch("https://vlxtiykg.github.io/Api-for-page/api/search.json")
 
     /* Search bar */
 
-const inputBar = document.querySelector("[search]")
+const inputBar = document.getElementById("search")
 
 let search = [];
 inputBar.addEventListener("input", e => {
