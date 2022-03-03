@@ -144,9 +144,6 @@ td, th, .mimic {
     text-align: left;
     padding: 8px;
 }
-.standard {
-    width: 1100p;
-}
 
 tr:nth-child(even) {
     background-color: #D9DB76;
