@@ -89,7 +89,6 @@ ul > li{
     text-align: center;
     margin-inline: auto;
 }
-
 .max__width {
     display: flex;
     flex-direction: column;
@@ -146,7 +145,7 @@ td, th, .mimic {
     padding: 8px;
 }
 .standard {
-    width: 1100px;
+    width: 1100p;
 }
 
 tr:nth-child(even) {

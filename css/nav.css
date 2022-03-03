@@ -10,6 +10,7 @@
     justify-content: center;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
     font-size: .75em;
 }
 a {
@@ -50,19 +51,7 @@ a:active {
     font-size: 1.2rem;
     width: 150px;
 }
-.linking {
-    border: none;
-    position: fixed;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    padding: 0;
-    width: 300px;
-    font-size: .5em;
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("https://png.pngtree.com/background/20210714/original/pngtree-purple-and-blue-nebula-galaxy-background-picture-image_1205456.jpg");
-}
+
 .dropdown {
     position: relative;
     /* display: grid; */
@@ -125,7 +114,8 @@ that they form a hexagon */
     transform: translateY(0px);
     /* allows interaction with content */
     pointer-events: auto;
-}    .sidebar {
+}    
+.sidebar {
 
     grid-template-columns: repeat(3, max-content);
     gap: 1rem;
@@ -230,11 +220,53 @@ that they form a hexagon */
 } */
 @media only screen and (max-width: 425px) {
     .container {
-    background-image: url("https://i0.wp.com/itsfoss.com/wp-content/uploads/2016/03/Linux-wallpapers-Cheat-sheets.jpg?ssl=1");
     height: min-content;
     }
+    .linking {
+        border: none;
+        position: fixed;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        padding: 0;
+        width: 150px;
+        font-size: .5em;
+        cursor: pointer;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: black;
+        left: 0.1em;
+    }
+    h1 {
+        top: -40%;
+    }
+    .menu {
+        position: absolute;
+        left: 0;
+        /* This makes the dropdown sit below nav bar */
+        top: calc(-100% + 1.1rem);
+        /* This makes the dropdown sit below the text */
+        /* top: calc(100% + .25rem); */
+        background-color: #EDEEC0;
+        padding: 0;
+        /* Bends the borders */
+        border-radius: .25rem;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+        /* Makes the content appear */
+        opacity: 0;
+        /*gives it a falling effect*/
+        transform: translateY(-10px);
+        /* transition so there is animation when it appears */
+        /* ease in and out is the property to change the animation */
+        transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+        /* this prevents you from clicking the content if it overlaps */
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 10%;
+        width: 200px;
+    }
 }
-
 
 @media only screen and (min-width: 425px) {
     .navigation {
@@ -294,28 +326,27 @@ that they form a hexagon */
     .container {
         width: 900px;
         height: 0px;
-        background-image: url("https://i0.wp.com/itsfoss.com/wp-content/uploads/2016/03/Linux-wallpapers-Cheat-sheets.jpg?ssl=1");
         background-blend-mode: overlay;
-        background-color: #444;
+        background-color: #444444;
         background-clip: text;
     }
 }
 
 @media only screen and (min-width: 600px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin: 0;
         position: relative;
         text-align: center;
     }
     .navigation {
-        font-size: .5em;
+        font-size: .5rem;
     }
     .separate {
         padding-left: 150px;
     }
     .sidebar {
-        width: 150px;
+        width: 55px;
     }
     .minimized {
         margin-left: 0;
@@ -332,12 +363,11 @@ that they form a hexagon */
         display: block;
     }
     .container {
-        width: 900px;
+        width: 600px;
         height: 0px;
         background-image: none;
         background-color: #E54B4B;
     }
-
 }
 @media only screen and (min-width: 768px) {
     .separate {
@@ -351,6 +381,7 @@ that they form a hexagon */
     .drop__title {
         font-size: 1.2em;
         padding: .25em;
+        text-decoration: underline;
     }
     .sidebar_show {
         width: 12rem;
@@ -378,6 +409,7 @@ that they form a hexagon */
     }
     .drop__title {
         font-size: 1.2em;
+        text-decoration: underline;
         padding: .25em;
     }
     .sidebar_show {
@@ -416,6 +448,7 @@ that they form a hexagon */
     .drop__title {
         font-size: 1.5em;
         padding: .25rem;
+        text-decoration: underline;
     }
     .sidebar_show {
         width: 13rem;
@@ -455,6 +488,7 @@ that they form a hexagon */
     }
     .drop__title > a {
         font-size: 1.75em;
+        text-decoration: underline;
         padding: .25em;
     }
     .sidebar_show {

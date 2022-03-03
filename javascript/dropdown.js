@@ -10,6 +10,7 @@
         currentDrop = e.target.closest('[data-dropdown]');
         //hides/open dropdown depending itsactive state
         currentDrop.classList.toggle('active');
+        console.log("Button 1");
     }
     //closes all the other dropdown using foreach loop
     document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
