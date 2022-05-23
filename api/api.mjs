@@ -1,17 +1,18 @@
 const userCardTemplate = document.querySelector("[data-user-template]")
 const userCardContainer = document.querySelector("[data-user-container]")
+const searchBar = document.querySelector("[data-search]")
 
 /* Search bar */
 
 let f_a_q = [];
 const inputBar = document.getElementById("search");
-inputBar.addEventListener("input", e => {
-    const value = e.target.value;
-    f_a_q.forEach(faq => {
-        const isVisible = faq.question.includes(value) || faq.description.includes(value)
-        faq.element.classList.toggle("hide", !isVisible)
-    });
-console.log(users)
+
+searchBar.addEventListener("input", e => {
+    const value = e.target.value.toLowerCase();
+    f_a_q.forEach(verification => {
+        const isVisible = verification.question.toLowerCase().includes(value) || verification.description.toLowerCase().includes(value)
+        verification.element.classList.toggle("trueinvisibility", !isVisible)
+    })
 })
 
 /* Api to get the faq */
@@ -32,7 +33,7 @@ fetch("https://vlxtiykg.github.io/Api-for-page/api/search.json")
             /* Create a card for the content to fit in */
             userCardContainer.append(card)
             console.log(faq)
-            return { question: faq.Header, description: faq.Description_Content, element: card}
+            return { question: faq.Header, description: faq.Description_Content, element: card }
         });
     })
 

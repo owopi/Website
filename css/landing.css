@@ -1,0 +1,114 @@
+:root { 
+    --gradient: linear-gradient(90deg, hsla(190, 100%, 42%, 1) 0%, hsla(214, 97%, 27%, 1) 100%);
+    --text: linear-gradient(90deg, hsla(110, 50%, 70%, 1) 0%, hsla(182, 52%, 42%, 1) 100%);
+}
+  body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    color: #333;
+    background: #ddd;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 60s ease-in-out infinite;
+    
+  }
+  
+  @keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+  }
+
+  .whitespace {
+    top: 15%;
+    width: 96%;
+    height: 90%;
+    position: fixed;
+    background-color: #fae0e4;
+  }
+  
+  .content {
+    z-index: 9999;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 60s ease-in-out infinite;
+    top: 0%;
+    width: 60%;
+    position: fixed;
+    padding: 3em;
+    box-shadow: 0 0 3em rgba(0,0,0,.15);
+  }
+  
+  .title {
+    margin: 0 0 .5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 0;
+  }
+  
+  #main1 {
+    background-size: 300%;
+    background-image: var(--text);
+    animation: flow 30s ease-in-out infinite;
+    -webkit-background-clip: text;
+        background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 1s;
+  }
+
+  .title:hover {
+    background-position: right;
+  }
+  
+  .fun {
+    color: white;
+    border: 0;
+    cursor: pointer;
+    padding: .5em 1.25em;
+    background: linear-gradient(90deg, #ee6352, purple, #ee6352);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 350ms;
+  }
+  
+  .fun:hover {
+    background-position: right;
+  }
+
+  /* Split the screen in half */
+.split {
+    height: 90%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 2%;
+    background-color: #ff85a1 ;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }

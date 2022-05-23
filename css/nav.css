@@ -103,18 +103,7 @@ that they form a hexagon */
 .zorin:after {
     transform: rotate(-60deg);
 }
-.dropdown.active > .linking,.linking:hover{
-    /* changes colors */
-    color: #CE5F75;
-}
-.dropdown.active > .linking + .menu{
-    /* makes it visible */
-    opacity: 1;
-    /* moves to original position */
-    transform: translateY(0px);
-    /* allows interaction with content */
-    pointer-events: auto;
-}    
+   
 .sidebar {
 
     grid-template-columns: repeat(3, max-content);
@@ -220,7 +209,7 @@ that they form a hexagon */
 } */
 @media only screen and (max-width: 425px) {
     .container {
-    height: min-content;
+    height: .5vh;
     }
     .linking {
         border: none;
@@ -231,17 +220,18 @@ that they form a hexagon */
         padding: 0;
         width: 150px;
         font-size: .5em;
+        top: 5%;
+        height: 5%;
         cursor: pointer;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: black;
-        left: 0.1em;
+        left: 13em;
     }
     h1 {
         top: -40%;
     }
     .menu {
         position: absolute;
-        left: 0;
         /* This makes the dropdown sit below nav bar */
         top: calc(-100% + 1.1rem);
         /* This makes the dropdown sit below the text */
@@ -263,12 +253,21 @@ that they form a hexagon */
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 10%;
-        width: 200px;
+        left: 4.3em;
+        /* btw imma start work on landing page and imma create another css for testing it out */
+        width: 250px;
+        height: 140px;
     }
-}
-
-@media only screen and (min-width: 425px) {
+    .drop__title {
+        font-size: 1.4em;
+        padding: 0;
+    }
+    .dropdown__links > a {
+        font-size: 1.2em;
+    }
+    .navigation {
+        font-size: 12px;
+    }
     .navigation {
         font-size: .5em;
     }
@@ -292,9 +291,6 @@ that they form a hexagon */
         position: relative;
         text-align: center;
     }
-    .navigation {
-        font-size: 12px;
-    }
     .sidebar {
         width: 100px;
     }
@@ -302,13 +298,14 @@ that they form a hexagon */
         margin-left: 0;
     }    
     .body-text {
-        margin-left: 5px;
+        margin-left: .1px;
     }
     .title-text {
         margin-left: 5px !important;
     }
     .navbarbg {
         width: 100%;
+        background-color: #ff9900;
         right: 0px;
     }    
     .hidenav {
@@ -330,9 +327,25 @@ that they form a hexagon */
         background-color: #444444;
         background-clip: text;
     }
+    .bodytotal {
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+    .dropdown.active > .linking,.linking:hover{
+        /* changes colors */
+        color: #CE5F75;
+    }
+    .dropdown.active > .linking + .menu{
+        /* makes it visible */
+        opacity: 1;
+        /* moves to original position */
+        transform: translateY(0px);
+        /* allows interaction with content */
+        pointer-events: auto;
+    } 
 }
-
-@media only screen and (min-width: 600px) {
+/*
+@media only screen and (max-width: 600px) {
     h1 {
         font-size: 1.8rem;
         margin: 0;
@@ -340,13 +353,13 @@ that they form a hexagon */
         text-align: center;
     }
     .navigation {
-        font-size: .5rem;
+        font-size: .8rem;
     }
     .separate {
         padding-left: 150px;
     }
     .sidebar {
-        width: 55px;
+        width: 150px;
     }
     .minimized {
         margin-left: 0;
@@ -368,8 +381,12 @@ that they form a hexagon */
         background-image: none;
         background-color: #E54B4B;
     }
+    .bodytotal {
+        margin-left: 150px;
+    }
+
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .separate {
         padding-left: 190px;
         font-size: 2rem;
@@ -397,8 +414,18 @@ that they form a hexagon */
     .hide {
         display: block;
     }
+    .bodytotal {
+        margin-left: 12rem;
+    }
+    .container {
+        width: 768px;
+        height: 0px;
+    }
+
 }
-@media only screen and (min-width: 1024px) {
+
+
+@media only screen and (max-width: 1024px) {
     .separate {
         padding-left: 320px;
         font-size: 2rem;
@@ -432,9 +459,13 @@ that they form a hexagon */
     .row {
         margin-left: 5rem;
     }
+    .container {
+        width: 1440px;
+        height: 0px;
+    }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 1440px) {
     .separate {
         width: 1400px;
         padding-left: 450px;
@@ -474,9 +505,13 @@ that they form a hexagon */
         height: 220px;
         width: 400px;
     }
+    .container {
+        width: 1440px;
+        height: 0px;
+    }
 }
 
-@media only screen and (min-width: 2559px) {
+@media only screen and (max-width: 2559px) {
     .separate {
         box-sizing: border-box;
         width: 2500px;
@@ -512,7 +547,7 @@ that they form a hexagon */
         font-size: 1.2rem;
     }
     .navigation {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     td {
         font-size: 1.1rem;
@@ -520,4 +555,4 @@ that they form a hexagon */
     .hide {
         display: block;
     }
-}
+} */

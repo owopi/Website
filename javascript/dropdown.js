@@ -13,6 +13,7 @@
         console.log("Button 1");
     }
     //closes all the other dropdown using foreach loop
+    console.log("Test 1");
     document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
         if(dropdown === currentDrop) return;
         dropdown.classList.remove("active");

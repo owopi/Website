@@ -109,3 +109,6 @@ input {
     font-size: 110%;
 }
 
+.trueinvisibility {
+    display: none;
+}
